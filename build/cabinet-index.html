@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>Личный кабинет</title>
+</head>
+<body>
+    <div id="sb-site">
+            <!--[if lt IE 8]>
+                <p class="browserupgrade">Вы используете <strong>очень старый</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> для того, чтобы сделать веб-серфинг безопасным и эффективным.</p>
+            <![endif]-->
+        
+            <!-- SITE TOP BAR -->
+            <div class="b_top_bar">
+                <div class="container">
+    
+                    <div class="grid">
+                    <!-- Phone -->
+                    <div class="grid__col-md-2 grid__col--bleed b_top_bar__phone"><span class="phone_number"><i class="icon icon-Telephone"></i> (800) <strong>600-70-70</strong></span></div>
+    
+                    <!-- Sub-navigation -->
+                    <div class="grid__col-md-7 grid__col--bleed b_top_bar__sub_nav">
+                        <ul class="sub_nav">
+                            <li class="sub_nav__item"><a href="#">Новости школы</a></li>
+                            <li class="sub_nav__item"><a href="#">Лицензия IHDS</a></li>
+                            <li class="sub_nav__item"><a href="#">Купить книги по Human Design</a></li>
+                            <li class="sub_nav__item"><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- Login -->
+                    <div class="grid__col-md-3 grid__col--bleed b_top_bar__login text-right">                    
+                            <ul class="login_details">
+                                <li class="login_link">
+                                    <a href="#" class="login_top" data-jq-dropdown="#b_top_bar__login___form-login"><i class="icon icon-Key"></i> Войти</a>
+                                </li>
+                                <li class="login_link"><a href="#" class="register_top"><i class="icon icon-Pencil"></i> Зарегестрироваться</a></li>
+                            </ul>   
+                    </div>
+                </div>    
+            </div>
+            </div>
+            <!-- PRIMARY HEADER -->
+            <header class="b_primary_header">
+                <div class="container">
+                    <div class="grid grid--align-center">
+                    <!-- Logo -->
+                    <div class="b_primary_header__logo grid__col-md-2 grid__col--bleed"><a href="index.html"><img src="img/logo.png" alt="HumanDesignLife" width="84px;" height="74px;"></a></div>
+    
+                    <!-- Navigation -->
+                    <nav class="b_primary_header__main_nav grid__col-md-10 grid__col--bleed">
+                        <ul class="site_nav">
+                            <li class="site_nav_item"><a href="start.html">С чего начать</a></li>
+                            <li class="site_nav_item"><a href="ravechart.html">Расчет карты</a></li>                        
+                            <li class="site_nav_item"><a href="lessons.html">Расписание занятий</a></li>
+                            <li class="site_nav_item"><a href="blog.html"></svg>Блог</a></li>
+                            <li class="site_nav_item"><a href="kb-sidebar.html">База знаний</a></li>
+                            <li class="site_nav_item"><a href="feedback.html">Отзывы</a></li>
+                            <li class="site_nav_item"><a href="forum.html">Форум</a></li>
+                        </ul>
+                        </nav>
+    </div>
+                    </div>
+                    
+            </header>
+        <!-- SITE CONTENT -->
+        <main class="b_primary_content">
+        <div id="dashboard">
+            <div class="container">
+                <div class="row">
+                       <div class="col-2" id="dashboard-navigation">
+                       <div class="cab-nav">
+                       	<div class="cab-nav--user">
+                       		<!-- User avatar -->
+                       		<div class="cab-nav--user_ava">
+                       			<img src="img/anufriev-ava.png" alt="demo-avatar" class="user-avatar">
+                       		</div>
+                       
+                       		<!-- User name -->
+                       		<div class="cab-nav--user_name">
+                       			<span>Артем Ануфриев</span>
+                       		</div>		
+                       	</div>
+                       
+                       
+                       	<!-- Cabinet navigation -->
+                           <ul class="cab-nav--links no-list">
+                               <li class="cab-nav--links-active"><a href="cabinet-index.html"><i class="fa fa-user" aria-hidden="true"></i> Профиль</a></li>
+                               <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Сообщения<span class="cab-nav--notification">2</span></a></li>
+                               <li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i> Ответы <span class="cab-nav--notification">187</span></a></li>
+                               <li><a href="#"><i class="fa fa-folder-open" aria-hidden="true"></i> Рейв-карты <span class="dropdown-icon dropdown-icon--dark"></span></a>
+                       			<ul class="no-list cab-nav--links-dropdown">
+                       				<li><a href="cabinet-ravecharts.html" title="Ваша личная картотека"><i class="fa fa-book" aria-hidden="true"></i> Все рейв-карты</a></li>
+                       				<li class="cab-nav--add-new"><a href="cabinet-add-new-ravechart.html" title="Добавить новую рейв-карту"><i class="fa fa-plus" aria-hidden="true"></i> Добавить новую</a></li>
+                       				<li class="cab-nav-dropdown--divider">Категории рейв-карт</li>
+                       				<li class="cab-nav--chart-category"><a href="#" title="Семья"><i class="fa fa-circle-o" aria-hidden="true"></i> Семья</a></li>
+                       				<li class="cab-nav--chart-category"><a href="#" title="Работа"><i class="fa fa-circle-o" aria-hidden="true"></i> Работа</a></li>
+                       				<li class="cab-nav--chart-category"><a href="#" title="Общество с ограниченной ответственностью"><i class="fa fa-circle-o" aria-hidden="true"></i> Общество с ограниченной ответственностью</a></li>
+                       			</ul>
+                               </li>
+                               <li><a href="/cabinet-feedback.html"><i class="fa fa-file-text" aria-hidden="true"></i> Отзыв</a></li>
+                               <li><a href="/cabinet-settings.html"><i class="fa fa-cog" aria-hidden="true"></i> Настройки</a></li>
+                           </ul>    
+                       </div>
+                       </div>
+                       <div class="col-10" id="dasboard-content">
+
+                    <!-- User Ravechart -->
+                    
+                        <div class="cab-section--title">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3>Ваша рейв-карта</h3>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="btn-xs btn_ghost" data-jq-dropdown="#rave-chart-actions">Действия <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    <div id="rave-chart-actions" class="jq-dropdown jq-dropdown-tip">
+                                        <div class="jq-dropdown-panel">
+                                            <ul class="no-list rave-chart-actions--list">
+                                                <li><a href="#"><i class="fa fa-print" aria-hidden="true"></i> Распечатать</a></li>
+                                                <li><a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i> Отправить на email</a></li>
+                                                <li><a href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i> Сохранить на компьютер</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                            <div class="cab-section">    
+                                <div id="mapresult">
+                                    <table class="mapresult--data">
+                                        <tbody>
+                                            <tr>
+                                                <td><label>Тип:</label> <strong><a href="#" class="dashed-link">Манифестор</strong></a></td>
+                                                <td><label>Профиль:</label> <strong><a href="#" class="dashed-link">1 / 4</a></strong></td>
+                                                <td><label>Определение:</label> <strong><a href="#" class="dashed-link">Тройное</a></strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Внутренний Авторитет:</label> <strong><a href="#" class="dashed-link">Эмоциональный</a></strong></td>
+                                                <td><label>Стратегия:</label> <strong><a href="#" class="dashed-link">Информировать</a></strong></td>
+                                                <td><label>Ложное Я:</label> <strong><a href="#" class="dashed-link">Гнев</a></strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"><label>Инкарнационный крест:</label><strong>Правоугольный Крест Руководства (47/22 | 45/26)</strong></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <img id="imgmap" src="img/ravechart_.png" alt="ravechart">
+                                    <form id="mailform" action="" method="post">
+                                        <input type="hidden" name="action" value="form">
+                                        <input type="hidden" name="image" value="/Content/Charts/628517070000000000_.png">
+                                        <input type="hidden" name="type" value="Манифестор">
+                                        <input type="hidden" name="profile" value="1 / 4">
+                                        <input type="hidden" name="difin" value="Тройное">
+                                        <input type="hidden" name="authority" value="Эмоциональный">
+                                        <input type="hidden" name="strategy" value="Информировать">
+                                        <input type="hidden" name="theme" value="Гнев">
+                                        <input type="hidden" name="cross" value="Правоугольный Крест Руководства (47/22 | 45/26)">
+                                    </form>
+                                </div>
+                            </div>                        
+                    
+
+                    <!-- First steps -->
+                    
+                    <div class="cab-section--title">
+                                <h3>Первые шаги к познанию себя</h3>
+                            </div>
+                        <div class="cab-section">
+                        <div class="grey-main_bg m-pad">
+                            <h4>Предисловие</h4>
+                            <p>Артем,данный бодиграф представляет вашу истинную природу тот человек, которым вы родились. Знание и умение применить
+на практике информацию, которая в нем зашифрована даст вам возможность прожить свою жизнь в гармонии с собой,
+реализоваться ради цели, для который вы пришли в этот мир и оздоровить свое тело.</p>
+<h4>Рекомендации</h4>
+<p>Знакомство со своим бодиграфом - это постепенный и последовательный процесс, в котором не нужно торопиться. Подходите
+к исследованию информации согласно подсказкам далее.  Мы пошагово поможем Вам начать это удивительное и увлекательное 
+путешествие в познание себя!</p>
+<p>Желаем успехов!</p>
+                            </div>
+                        </div>
+                    
+
+                    <!-- Ravechart definition -->
+                        <div class="row">
+                        <!-- Type -->
+                            <div class="col-4">
+                            <div class="cab-section def-block">
+                                <span class="def-number--round">1</span>
+                                <h4 class="def-value">Ваш тип личности: <a href="#"><strong>Манифестор</strong></a></h4>
+                                <div class="def-tiser">
+                                    <p>Манифестор — единственный генетический тип, который может проявлять инициативу; им мечтает быть каждый. Он не должен ждать отклика, как Генераторы, приглашения — как Проекторы или прохождения лунного цикла подобно Рефлекторам. </p>
+                                    <p>Манифесторов около 8% от общего числа людей на планете, но лишь единицы из них используют свою мощь, и еще меньшее количество проживает Свой Дизайн...</p>
+                                </div>
+                                <div class="def-tiser--learnmore">
+                                    <a href="#" class="dashed-link">Читать полностью про Манифестора</a>
+                                </div>
+                                </div>
+                            </div>
+
+                        <!-- Authority -->
+                            <div class="col-4">
+                            <div class="cab-section def-block">
+                                <span class="def-number--round">2</span>
+                                <h4 class="def-value">Ваш внутренний авторитет: <a href="#"><strong>Эмоциональный</strong></a></h4>
+                                <div class="def-tiser">
+                                    <p>Прежде всего, центр солнечного сплетения — это очень мощный мотор. Тематически он связан с чувствами и эмоциями. Центр Солнечного сплетения производит волновой паттерн, который мы переживаем, как цикл от надежды к боли, от ожидания к разочарованию, от радости к отчаянию. </p>
+                                    <p>Необходимо научиться распознавать волновой паттерн и принимать...</p>
+                                </div>
+                                <div class="def-tiser--learnmore">
+                                    <a href="#" class="dashed-link">Читать полностью про Эмоциональный авторитет</a>
+                                </div> 
+                                </div>                              
+                            </div>
+
+                            <!-- Strategy -->
+                            <div class="col-4">
+                            <div class="cab-section def-block">
+                                <span class="def-number--round">3</span>
+                                <h4 class="def-value">Ваша стратегия: <a href="#"><strong>Информировать</strong></a></h4>
+                                <div class="def-tiser">
+                                    <p>Когда любой, даже смирившийся со своей судьбой, Манифестор действует, он встречает сопротивление других людей, для которых эти действия зачастую равносильны насилию и вторжению. Именно поэтому стратегия Манифестора заключается в предварительном информировании тех людей, которых данное действие может затронуть...</p>
+                                </div>
+                                <div class="def-tiser--learnmore">
+                                    <a href="#" class="dashed-link">Читать полностью про стратегию Информировать</a>
+                                </div>
+                                </div>
+                            </div>                                   
+                        </div><!-- /.row -->
+
+                        <div class="row">
+
+                            <!-- Strategy -->
+                            <div class="col-4">
+                            <div class="cab-section def-block">
+                                <span class="def-number--round">4</span>
+                                <h4 class="def-value">Ваш профиль: <a href="#"><strong>1 \ 4</strong></a></h4>
+                                <div class="def-tiser">
+                                    <p>Когда любой, даже смирившийся со своей судьбой, Манифестор действует, он встречает сопротивление других людей, для которых эти действия зачастую равносильны насилию и вторжению. Именно поэтому стратегия Манифестора заключается в предварительном информировании тех людей, которых данное действие может затронуть...</p>
+                                    <p> Глиссандирующая ритмоформула многопланово имитирует перекрестный нонаккорд. Примочка трансформирует флэнжер.</p>
+                                </div>
+                                <div class="def-tiser--learnmore">
+                                    <a href="#" class="dashed-link">Читать полностью про стратегию Информировать</a>
+                                </div>   
+                                </div>                                
+                            </div>
+
+                            <!-- Strategy -->
+                            <div class="col-4">
+                            <div class="cab-section def-block">
+                                <span class="def-number--round">5</span>
+                                <h4 class="def-value">Ваше Ложное Я: <a href="#"><strong>Гнев</strong></a></h4>
+                                <div class="def-tiser">
+                                    <p>Когда любой, даже смирившийся со своей судьбой, Манифестор действует, он встречает сопротивление других людей, для которых эти действия зачастую равносильны насилию и вторжению. Именно поэтому стратегия Манифестора заключается в предварительном информировании тех людей, которых данное действие может затронуть...</p>
+                                    <p>Аллегро mezzo forte заканчивает однокомпонентный септаккорд.</p>
+                                </div>
+                                <div class="def-tiser--learnmore">
+                                    <a href="#" class="dashed-link">Читать полностью про Ложное Я Гнев</a>
+                                </div>
+                                </div>                                  
+                            </div>                            
+
+                            <!-- Video -->
+                            <div class="col-4">
+                            <div class="cab-section def-block">
+                                <span class="def-number--round">6</span>
+                                <h4 class="def-value">Смотрите видео про <strong>Манифестора</strong></h4>
+                                <div class="def-tiser">
+                                    <p><img src="img/home_slider_1.png" alt="video1" class="responsive-img"></p>
+                                </div>
+                                <div class="def-tiser--learnmore">
+                                    <a href="#" class="dashed-link">Смотрите видео про Манифестора</a>
+                                </div>
+                                </div>                                  
+                            </div>
+
+                        </div><!-- /.row -->
+
+                    <!-- Consultations -->
+                    
+                        <div class="cab-section--title"><h3>Квалифицированная консультация</h3></div>
+                        <div class="cab-section">
+                        <div class="row">
+                            <div class="col-6">
+                                                            <div class="expert-consult-bg">
+                                    
+                                    <img src="img/Certified-pro.png" class="responsive-img float-left" alt="сертифицированый аналитик Дизайна Человека">                                  
+                                    <h4>Лицензированные аналитки системы Дизайна Человека</h4>
+                                    <p>Все преподаватели школы “HumanDesignLife” имеют профессиональную аккредитацию Международой Школы Дизайна Человека (IHDS) на оказание услуг по прочтению рейв-карты и проведению групповых занятий.</p>
+                                    <p>Проверить статус преподавателей вы можете на этой <a href="#" class="dashed-link">странице</a>.</p>
+                                    
+                                    
+                                </div>
+
+                            </div>
+                            <div class="col-6">
+                            <h4>Получите персональную консультацию</h4>
+                                                        <p>“Дизайн Человека” - это знание, которым нужно пользоваться на практике. Как и в любой другой науке, есть профессиональные преподаватели, так и в системе “Human Design” существуют аналитики,
+сертифицированные Международной Школой Дизайна Человека (International Human Design School),
+которые предоставляют свои услуги по углубленному прочтению рейв-карты и всех ее дополнительных аспектов.</p>
+<p>Мы предлагаем Вам сэкономить свое время и получить профессиональное прочтение рейв-карты. В процессе консультации вы сможете задать свои вопросы и получить развернутые ответы.</p>
+<p><a href="#" class="btn btn-default btn_red">Виды консультаций</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                                       
+
+                                                        
+</div></div>
+        </main>
+            <!-- FOOTER -->
+            <footer class="b_primary_footer" id="b_site_footer">
+                <div class="b_primary_footer__navigation">
+                    <div class="container">
+                        <!-- Logo -->
+                        <div class="b_primary_header__logo"><a href="index.html"><img src="img/logo.png" alt="HumanDesignLife" width="84px;" height="74px;"></a></div>
+    
+                        <!-- Navigation -->
+                        <nav class="b_primary_footer__main_nav">
+                            <ul class="no-list site_nav_invert">
+                                <li class="site_nav_item"><a href="start.html"><svg class="nav_icon icon-bulb19"><use xlink:href="#icon-bulb19"></use></svg> С чего начать</a></li>
+                                <li class="site_nav_item"><a href="ravechart.html"><svg class="nav_icon icon-rave_icon"><use xlink:href="#icon-rave_icon"></use></svg>Расчет карты</a></li>                        
+                                <li class="site_nav_item"><a href="lessons.html"><svg class="nav_icon icon-calendar-icons"><use xlink:href="#icon-calendar-icons"></use></svg>Расписание занятий</a></li>
+                                <li class="site_nav_item"><a href="guide.html"><svg class="nav_icon icon-graduation1"><use xlink:href="#icon-graduation1"></use></svg>Как стать гидом?</a></li>
+                                <li class="site_nav_item"><a href="knowledgebase.html"><svg class="nav_icon icon-book201"><use xlink:href="#icon-book201"></use></svg>База знаний</a></li>
+                                <li class="site_nav_item"><a href="feedback.html"><svg class="nav_icon icon-message31"><use xlink:href="#icon-message31"></use></svg> Отзывы</a></li>
+                                <li class="site_nav_item"><a href="forum.html"><svg class="nav_icon icon-socialnetwork156"><use xlink:href="#icon-socialnetwork156"></use></svg>Форум</a></li>
+                            </ul>
+                        </nav>
+    
+                        
+                    </div> 
+                </div>
+                
+                <div class="b_site_information">
+                        <div class="container">
+    
+                            <div class="col-4">
+                                <ul class="no-list footer_contacts">
+                                    <li><span class="phone_white_icon"></span> 8(800)700-60-00</li>
+                                    <li><span class="envelope_white_icon"></span> <a href="mailto:info@hdlife.center">info@hdlife.center</a></li>
+                                </ul>
+                                <p class="copyright">Общество с ограниченной ответственностью
+                                    <br>“Осознанность”. Юр.Адрес: Санкт-Петербург г, ул.Ольховая, д.20А, оф.11-Н. 
+    
+                                    <br>ИНН 7814591683 ОГРН 1137847438057 КПП 781401001</p>
+                                <p class="copyright">Использование материалов с сайта разрешено только с согласия правообладателей. © 2012–2014.<br> HumanDesignLife - Все права защищены.</p>    
+                            </div>
+    
+                            <div class="col-2">
+                                <div class="b_site_information__sub_nav">
+                                    <h4 class="sub_nav__title">Наука "Дизайн Человека"</h4>
+                                    <ul class="no-list">
+                                        <li class="sub_nav_item_dark"><a href="#">Концепции науки</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">История появления</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Интересные факты</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Как это работает?</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Видео-материалы</a></li>
+                                    </ul>
+                                </div>                            
+                            </div>
+    
+                            <div class="col-2">
+                                <div class="b_site_information__sub_nav">
+                                    <h4 class="sub_nav__title">Консультации</h4>
+                                    <ul class="no-list">
+                                        <li class="sub_nav_item_dark"><a href="#">Чтение рейв-карты</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Чтение рейв-карты ребенка</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Аналитика взаимоотношений</a></li>
+                                    </ul>
+                                </div>                            
+                            </div>                                                  
+    
+                            <div class="col-2">
+                                <div class="b_site_information__sub_nav">
+                                    <h4 class="sub_nav__title">Полезные ссылки</h4>
+                                    <ul class="no-list">
+                                        <li class="sub_nav_item_dark"><a href="#">Личный кабинет</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Форум</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Купить книги по "Дизайну Человека"</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Вопрос/Ответ</a></li>
+                                    </ul>
+                                </div>                            
+                            </div>                                              
+    
+                            <div class="col-2">
+                                <div class="b_site_information__sub_nav">
+                                    <h4 class="sub_nav__title">О нас</h4>
+                                    <ul class="no-list">
+                                        <li class="sub_nav_item_dark"><a href="#">Мы в лицах</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Фото-отчеты</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Новости</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Лицензии IHDS</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Свяжитесь с нами</a></li>
+                                    </ul>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>    
+            </footer>
+            
+    
+        </div><!-- /#b_page  -->
+    
+        <!-- Scroll icons -->
+    <!--     <a href="#0" class="side_icon hamburger-side"></a>
+        <a href="#0" class="side_icon ravechart-side"></a>
+        <a href="#0" class="side_icon kb-side"></a> -->
+        <a href="#0" class="cd-top" title="Наверх">Наверх</a><!-- back to top -->
+        
+            <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+            <!--  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script> -->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/jquery.flexslider-min.js"></script>
+            <script src="js/jquery.tablesorter.min.js"></script>
+            <script src="js/ckeditor/ckeditor.js"></script>
+            <script src="js/main.js"></script> 
+            
+        </body>
+    </html>
+</body>
+</html>

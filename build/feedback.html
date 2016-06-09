@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>New project</title>
+</head>
+<body>
+    <div id="sb-site">
+            <!--[if lt IE 8]>
+                <p class="browserupgrade">Вы используете <strong>очень старый</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> для того, чтобы сделать веб-серфинг безопасным и эффективным.</p>
+            <![endif]-->
+        
+            <!-- SITE TOP BAR -->
+            <div class="b_top_bar">
+                <div class="container">
+    
+                    <div class="grid">
+                    <!-- Phone -->
+                    <div class="grid__col-md-2 grid__col--bleed b_top_bar__phone"><span class="phone_number"><i class="icon icon-Telephone"></i> (800) <strong>600-70-70</strong></span></div>
+    
+                    <!-- Sub-navigation -->
+                    <div class="grid__col-md-7 grid__col--bleed b_top_bar__sub_nav">
+                        <ul class="sub_nav">
+                            <li class="sub_nav__item"><a href="#">Новости школы</a></li>
+                            <li class="sub_nav__item"><a href="#">Лицензия IHDS</a></li>
+                            <li class="sub_nav__item"><a href="#">Купить книги по Human Design</a></li>
+                            <li class="sub_nav__item"><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- Login -->
+                    <div class="grid__col-md-3 grid__col--bleed b_top_bar__login text-right">                    
+                            <ul class="login_details">
+                                <li class="login_link">
+                                    <a href="#" class="login_top" data-jq-dropdown="#b_top_bar__login___form-login"><i class="icon icon-Key"></i> Войти</a>
+                                </li>
+                                <li class="login_link"><a href="#" class="register_top"><i class="icon icon-Pencil"></i> Зарегестрироваться</a></li>
+                            </ul>   
+                    </div>
+                </div>    
+            </div>
+            </div>
+            <!-- PRIMARY HEADER -->
+            <header class="b_primary_header">
+                <div class="container">
+                    <div class="grid grid--align-center">
+                    <!-- Logo -->
+                    <div class="b_primary_header__logo grid__col-md-2 grid__col--bleed"><a href="index.html"><img src="img/logo.png" alt="HumanDesignLife" width="84px;" height="74px;"></a></div>
+    
+                    <!-- Navigation -->
+                    <nav class="b_primary_header__main_nav grid__col-md-10 grid__col--bleed">
+                        <ul class="site_nav">
+                            <li class="site_nav_item"><a href="start.html">С чего начать</a></li>
+                            <li class="site_nav_item"><a href="ravechart.html">Расчет карты</a></li>                        
+                            <li class="site_nav_item"><a href="lessons.html">Расписание занятий</a></li>
+                            <li class="site_nav_item"><a href="blog.html"></svg>Блог</a></li>
+                            <li class="site_nav_item"><a href="kb-sidebar.html">База знаний</a></li>
+                            <li class="site_nav_item"><a href="feedback.html">Отзывы</a></li>
+                            <li class="site_nav_item"><a href="forum.html">Форум</a></li>
+                        </ul>
+                        </nav>
+    </div>
+                    </div>
+                    
+            </header>
+                <!-- Page header -->
+            <header class="b_simple_page_header">
+                <!-- Хлебные крошки -->
+                <div class="breadcrumbs">
+                    <ul class="no-list breadcrumb__links">
+                        <li><a href="/" class="red_link">Главная</a></li>
+                        <li class="grey">Отзывы</li>
+                    </ul>
+                </div>
+                <!-- Заголовок страницы -->
+                    <h1 class="page_title text-center">Отзывы</h1>
+            </header> 
+        <!-- SITE CONTENT -->
+        <main class="b_primary_content">
+            <div class="container">
+            <div class="row">
+                <!-- Навигация по отзывам -->
+                <div class="col-3">
+                    <div id="sort-feedback">
+                        <h4 class="widget-title">Сортировать отзывы</h4>
+                        <form action="">
+                            <ul class="no-list sort-feedback-nav">
+                                <li><input id="value" class="styled-checkbox" type="checkbox" name="cat" value="value"> <label for="value">сначала популярные</label></li>
+                                <li><input type="checkbox" id="k2" class="styled-checkbox" name="cat" value="value" checked> <label for="k2">сначала новые</label></li>
+                                <li><input type="checkbox" id="k3" class="styled-checkbox" name="cat" value="value"><label for="k3"> мужские</label></li>
+                                <li><input type="checkbox" class="styled-checkbox" id="k4" name="cat" value="value"><label for="k4"> женские</label></li>
+                                <li><input type="checkbox" class="styled-checkbox" id="k5" name="cat" value="value"><label for="k5"> Генератор</label></li>
+                                <li><input type="checkbox" class="styled-checkbox" id="k6" name="cat" value="value"><label for="k6"> Манифестирующий Генератор</label></li>
+                                <li><input type="checkbox" class="styled-checkbox" id="k7" name="cat" value="value"><label for="k7"> Манифестор</label></li>
+                                <li><input type="checkbox" class="styled-checkbox" name="cat" id="k8" value="value"><label for="k8"> Проектор</label></li>
+                                <li><input type="checkbox" class="styled-checkbox" name="cat" id="k9" value="value"><label for="k9"> Рефлектор</label></li>
+                            </ul>
+                        </form>
+                    </div>
+
+                </div>
+
+                <!-- Feedback grid -->
+                <div class="col-9">
+                    
+                    <ul class="no-list" id="people-feedback-grid">
+                        <!-- Person -->
+                        <li class="people-feedback-grid--item">
+                            <!-- Person photo -->
+                            <div class="person-photo">
+                                <a href="personfeedback.html"><img src="img/demo-avatar.png" alt="demo"></a>
+                            </div>
+
+                            <!-- Person name -->
+                            <h4 class="person-name">Анна Зайцева</h4>
+
+                            <!-- Person rave -->
+                            <span class="h4 strong">Генератор 6\2</span>
+
+                            <!-- Feedback exerpt -->
+                            <p class="person-feed-exerpt">
+                                Моя жизнь стала совершенно другой! Благодаря этой системе я поняла насколько важно...
+                            </p>
+
+                            <!-- Time and likes -->
+                            <ul class="no-list feedback-data">
+                                <li class="feedback-data--item"><span class="feedback-date">13.07.2016</span></li>
+                                <li class="feedback-data--item"><span class="feedback-likes-counter">17</span></li>
+                            </ul>
+                        </li>                        
+
+                        <!-- Person -->
+                        <li class="people-feedback-grid--item">
+                            <!-- Person photo -->
+                            <div class="person-photo">
+                                <a href="#"><img src="img/demo-avatar.png" alt="demo"></a>
+                            </div>
+
+                            <!-- Person name -->
+                            <h4 class="person-name">Анна Зайцева</h4>
+
+                            <!-- Person rave -->
+                            <span class="h4 strong">Генератор 6\2</span>
+
+                            <!-- Feedback exerpt -->
+                            <p class="person-feed-exerpt">
+                                Моя жизнь стала совершенно другой! Благодаря этой системе я поняла насколько важно...
+                            </p>
+
+                            <!-- Time and likes -->
+                            <span class="feedback-date">13.07.2016</span>
+                            <span class="feedback-likes-counter">17</span>
+                        </li>                        
+
+                        <!-- Person -->
+                        <li class="people-feedback-grid--item">
+                            <!-- Person photo -->
+                            <div class="person-photo">
+                                <a href="#"><img src="img/demo-avatar.png" alt="demo"></a>
+                            </div>
+
+                            <!-- Person name -->
+                            <h4 class="person-name">Анна Зайцева</h4>
+
+                            <!-- Person rave -->
+                            <span class="h4 strong">Генератор 6\2</span>
+
+                            <!-- Feedback exerpt -->
+                            <p class="person-feed-exerpt">
+                                Моя жизнь стала совершенно другой! Благодаря этой системе я поняла насколько важно...
+                            </p>
+
+                            <!-- Time and likes -->
+                            <span class="feedback-date">13.07.2016</span>
+                            <span class="feedback-likes-counter">17</span>
+                        </li>                        
+
+                        <!-- Person -->
+                        <li class="people-feedback-grid--item">
+                            <!-- Person photo -->
+                            <div class="person-photo">
+                                <a href="#"><img src="img/demo-avatar.png" alt="demo"></a>
+                            </div>
+
+                            <!-- Person name -->
+                            <h4 class="person-name">Анна Зайцева</h4>
+
+                            <!-- Person rave -->
+                            <span class="h4 strong">Генератор 6\2</span>
+
+                            <!-- Feedback exerpt -->
+                            <p class="person-feed-exerpt">
+                                Моя жизнь стала совершенно другой! Благодаря этой системе я поняла насколько важно...
+                            </p>
+
+                            <!-- Time and likes -->
+                            <span class="feedback-date">13.07.2016</span>
+                            <span class="feedback-likes-counter">17</span>
+                        </li>                        
+
+                        <!-- Person -->
+                        <li class="people-feedback-grid--item">
+                            <!-- Person photo -->
+                            <div class="person-photo">
+                                <a href="#"><img src="img/demo-avatar.png" alt="demo"></a>
+                            </div>
+
+                            <!-- Person name -->
+                            <h4 class="person-name">Анна Зайцева</h4>
+
+                            <!-- Person rave -->
+                            <span class="h4 strong">Генератор 6\2</span>
+
+                            <!-- Feedback exerpt -->
+                            <p class="person-feed-exerpt">
+                                Моя жизнь стала совершенно другой! Благодаря этой системе я поняла насколько важно...
+                            </p>
+
+                            <!-- Time and likes -->
+                            <span class="feedback-date">13.07.2016</span>
+                            <span class="feedback-likes-counter">17</span>
+                        </li>                        
+
+                        <!-- Person -->
+                        <li class="people-feedback-grid--item">
+                            <!-- Person photo -->
+                            <div class="person-photo">
+                                <a href="#"><img src="img/demo-avatar.png" alt="demo"></a>
+                            </div>
+
+                            <!-- Person name -->
+                            <h4 class="person-name">Анна Зайцева</h4>
+
+                            <!-- Person rave -->
+                            <span class="h4 strong">Генератор 6\2</span>
+
+                            <!-- Feedback exerpt -->
+                            <p class="person-feed-exerpt">
+                                Моя жизнь стала совершенно другой! Благодаря этой системе я поняла насколько важно...
+                            </p>
+
+                            <!-- Time and likes -->
+                            <span class="feedback-date">13.07.2016</span>
+                            <span class="feedback-likes-counter">17</span>
+                        </li>                        
+
+                        <!-- Person -->
+                        <li class="people-feedback-grid--item">
+                            <!-- Person photo -->
+                            <div class="person-photo">
+                                <a href="#"><img src="img/demo-avatar.png" alt="demo"></a>
+                            </div>
+
+                            <!-- Person name -->
+                            <h4 class="person-name">Анна Зайцева</h4>
+
+                            <!-- Person rave -->
+                            <span class="h4 strong">Генератор 6\2</span>
+
+                            <!-- Feedback exerpt -->
+                            <p class="person-feed-exerpt">
+                                Моя жизнь стала совершенно другой! Благодаря этой системе я поняла насколько важно...
+                            </p>
+
+                            <!-- Time and likes -->
+                            <span class="feedback-date">13.07.2016</span>
+                            <span class="feedback-likes-counter">17</span>
+                        </li>                        
+
+                        <!-- Person -->
+                        <li class="people-feedback-grid--item">
+                            <!-- Person photo -->
+                            <div class="person-photo">
+                                <a href="#"><img src="img/demo-avatar.png" alt="demo"></a>
+                            </div>
+
+                            <!-- Person name -->
+                            <h4 class="person-name">Анна Зайцева</h4>
+
+                            <!-- Person rave -->
+                            <span class="h4 strong">Генератор 6\2</span>
+
+                            <!-- Feedback exerpt -->
+                            <p class="person-feed-exerpt">
+                                Моя жизнь стала совершенно другой! Благодаря этой системе я поняла насколько важно...
+                            </p>
+
+                            <!-- Time and likes -->
+                            <span class="feedback-date">13.07.2016</span>
+                            <span class="feedback-likes-counter">17</span>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </main>
+    
+    
+    
+            <a href="#0" class="cd-top" title="Наверх">Наверх</a><!-- back to top -->
+        </div>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/jquery.flexslider-min.js"></script>
+            <script src="js/slidebars.min.js"></script>
+            <script src="js/main.js"></script>
+            
+        </body>
+    </html>
+</body>
+</html>

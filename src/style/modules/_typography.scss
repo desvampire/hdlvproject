@@ -1,0 +1,48 @@
+@font-face {
+	font-family: 'NeueHaasUnicaW1GBold';
+	src: url('../fonts/NeueHaasUnica/NeueHaasUnicaW1G-Bold.eot');
+	src: url('../fonts/NeueHaasUnica/NeueHaasUnicaW1G-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NeueHaasUnica/NeueHaasUnicaW1G-Bold.woff') format('woff'),
+		url('../fonts/NeueHaasUnica/NeueHaasUnicaW1G-Bold.ttf')  format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NeueHaasUnicaW1G';
+	src: url('../fonts/NeueHaasUnica/NeueHaasUnicaW1G-Regular.eot');
+	src: url('../fonts/NeueHaasUnica/NeueHaasUnicaW1G-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NeueHaasUnica/NeueHaasUnicaW1G-Regular.woff') format('woff'),
+		url('../fonts/NeueHaasUnica/NeueHaasUnicaW1G-Regular.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+	font-family: $haasreg;
+}
+
+h1,h2,h3,h4,h5,h6,strong,b{
+	font-family: $haasbold;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	li{
+		list-style: none;
+	}
+}
+
+a{
+	color: $red;
+	text-decoration: none;
+}
+
+.white{
+	color: $white;
+}
+
+.text-right{
+	text-align: right;
+}

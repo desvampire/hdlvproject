@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>New project</title>
+</head>
+<body>
+    //= template/header.html
+            <!-- Page header -->
+            <header class="b_simple_page_header">
+                <!-- Хлебные крошки -->
+                <div class="breadcrumbs">
+                    <ul class="no-list breadcrumb__links">
+                        <li><a href="/" class="red_link">Главная</a></li>
+                        <li class="grey">База знаний</li>
+                    </ul>
+                </div>
+                <!-- Заголовок страницы -->
+                    <h1 class="page_title text-center">База знаний</h1>
+            </header>
+        <!-- SITE CONTENT -->
+        <main class="b_primary_content">
+            <div class="container">
+                <!-- Page left sidebar -->
+                <div id="b_page-left-sidebar">
+                    <div class="row">
+                        <!-- Left sidebar -->
+                        <div class="col-3">
+                            //= template/page-kb-sidebar.html
+                        </div>
+
+                        <!-- Page left sidebar CoNTENT -->
+                        <div class="col-9">
+                            <div class="page-sidebar--content-wrapper">
+                                <p>Добро пожаловать в базу знаний системы Дизайна Человека!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    //= template/footer.html
+</body>
+</html>

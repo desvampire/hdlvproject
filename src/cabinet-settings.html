@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>Мои настройки - Личный кабинет</title>
+</head>
+<body>
+    //= template/header.html
+        <!-- SITE CONTENT -->
+        <main class="b_primary_content">
+            <div id="dashboard">
+                <div class="container">
+                    <div class="row">
+                        //= template/cabinet-header.html
+                            <div class="col-10" id="dasboard-content">
+                                <div class="cab-section--title">
+                                    <h3>Мои настройки</h3>
+                                </div>
+
+                                <div class="cab-section">
+                                <div class="tabs-left">
+                                    <ul id="tabs">
+                                        <li class="active">Основные</li>
+                                        <li>Моя рейв-карта</li>
+                                        <li>Приватность</li>
+                                        <li>Дополнительные</li>
+                                    </ul>
+
+                                    <ul id="tab">
+                                        <li class="active">
+                                        <h2>Основные настройки</h2>
+                                            <!-- Main settings -->
+                                            <div class="user-main-settings">
+                                            <form>
+                                                <div class="form_group">
+                                                    <label for="user_name">Имя</label>
+                                                    <input type="text" name="name" value="Артем">
+                                                </div>                                
+                                                <div class="form_group">
+                                                    <label for="user_surname">Фамилия</label>
+                                                    <input type="text" name="surname" value="Ануфриев">
+                                                </div>                                
+                                                <div class="form_group">
+                                                    <label for="user_surname">Email</label>
+                                                    <input type="text" name="email" value="info@hdlife.center">
+                                                </div>
+                                                <div class="form_group">
+                                                    <label for="user_phone">Телефон</label>
+                                                    <input type="text" name="phone" value="89213686070">
+                                                </div>  
+                                                <div class="form_group">
+                                                    <label for="user_surname">Старый пароль</label>
+                                                    <input type="password" id="user_password" name="password" class="showpassword">
+                                                    <span class="showmypassword">показать пароль</span>
+                                                </div>                                 
+                                                <div class="form_group">
+                                                    <label for="user_surname">Новый пароль</label>
+                                                    <input type="password" id="user_password" name="password" class="showpassword">
+                                                    <span class="showmypassword">показать пароль</span>
+                                                </div>                                  
+                                                <div class="form_group">
+                                                    <label for="user_surname">Новый пароль еще раз</label>
+                                                    <input type="password" id="user_password" name="password" class="showpassword">
+                                                    <span class="showmypassword">показать пароль</span>
+                                                </div> 
+
+                                                <div class="form_group">
+                                                    <input type="submit" class="btn btn-xs btn_red" value="Сохранить">
+                                                </div>                                   
+                            
+                                                </form>
+                                                </div>
+            </li>
+            <li>
+<h2>Перерасчитать рейв-карту</h2>
+<p>Здесь вы можете перерасчитать свою рейв-карту, если при регистрации вы ввели неточные данные.</p>
+            <!-- Перерасчет карты -->
+            <table class="get-rave-chart--table">
+                <tbody>
+                    <tr>
+                        <td>
+                        <p>Дата:</p>
+                        <select name="day" id="birh_date">
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="03">03</option>
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="06">06</option>
+                                                <option value="07">07</option>
+                                                <option value="08">08</option>
+                                                <option value="09">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                                <option value="25">25</option>
+                                                <option value="26">26</option>
+                                                <option value="27">27</option>
+                                                <option value="28">28</option>
+                                                <option value="29">29</option>
+                                                <option value="30">30</option>
+                                                <option value="31">31</option>                                       
+                                        </select>
+                                        </td>
+                        <td>
+                            <p>Месяц:</p>
+                            <select name="mounth" id="birth_month">
+                                        <option value="01">Январь</option>
+
+                                        <option value="02">Февраль</option>
+
+                                        <option value="03">Март</option>
+
+                                        <option value="04">Апрель</option>
+
+                                        <option value="05">Май</option>
+
+                                        <option value="06">Июнь</option>
+
+                                        <option value="07">Июль</option>
+
+                                        <option value="08">Август</option>
+
+                                        <option value="09">Сентябрь</option>
+
+                                        <option value="10">Октябрь</option>
+
+                                        <option value="11">Ноябрь</option>
+
+                                        <option value="12">Декабрь</option>
+                                      </select>                            
+                        </td>
+
+                        <td>
+                            <p>Год:</p>
+                            <select id="birth_year" name="year"><script>
+                                          var myDate = new Date();
+                                          var year = myDate.getFullYear();
+                                          for(var i = 1900; i < year+1; i++){
+                                              document.write('<option value="'+i+'">'+i+'</option>');
+                                          }
+                                          </script>
+                                          </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><p>Час:</p>
+<select name="hour" id="birth_time_hour">
+                                            <option value="0">00</option>
+                                                <option value="1">01</option>
+                                                <option value="2">02</option>
+                                                <option value="3">03</option>
+                                                <option value="4">04</option>
+                                                <option value="5">05</option>
+                                                <option value="6">06</option>
+                                                <option value="7">07</option>
+                                                <option value="8">08</option>
+                                                <option value="9">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>                                        
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option> 
+                                        </select>
+                        </td>
+
+                        <td>
+                        <p>Минута:</p>
+<select name="minute" id="birth_time_minute">
+                                            <option value="0">00</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>                                        
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>                                        
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                            <option value="32">32</option>
+                                            <option value="33">33</option>
+                                            <option value="34">34</option>
+                                            <option value="35">35</option>
+                                            <option value="36">36</option>                                        
+                                            <option value="37">37</option>
+                                            <option value="38">38</option>
+                                            <option value="39">39</option>
+                                            <option value="40">40</option>
+                                            <option value="41">41</option>
+                                            <option value="42">42</option>
+                                            <option value="43">43</option>
+                                            <option value="44">44</option>
+                                            <option value="45">45</option>
+                                            <option value="46">46</option>
+                                            <option value="47">47</option>                                        
+                                            <option value="48">48</option>
+                                            <option value="49">49</option>
+                                            <option value="50">50</option>
+                                            <option value="51">51</option>
+                                            <option value="52">52</option>
+                                            <option value="53">53</option>
+                                            <option value="54">54</option>
+                                            <option value="55">55</option>
+                                            <option value="56">56</option>
+                                            <option value="57">57</option>                                        
+                                            <option value="58">58</option>
+                                            <option value="59">59</option>
+                                        </select>                                 
+                        </td>
+                        </tr>
+<tr>
+                        <td>
+                            <p>Страна:</p>
+                            <select name="country" class="mform__select" id="country_picker" onchange="mFormClick()">
+                                                <option value="Австралия">Австралия</option><option value="Австрия">Австрия</option><option value="Азербайджан">Азербайджан</option><option value="Албания">Албания</option><option value="Алжир">Алжир</option><option value="Ангола">Ангола</option><option value="Андорра">Андорра</option><option value="Аргентина">Аргентина</option><option value="Армения">Армения</option><option value="Афганистан">Афганистан</option><option value="Багамские острова">Багамские острова</option><option value="Бангладеш">Бангладеш</option><option value="Барбадос">Барбадос</option><option value="Бахрейн">Бахрейн</option><option value="Белиз">Белиз</option><option value="Белоруссия">Белоруссия</option><option value="Бельгия">Бельгия</option><option value="Бенин">Бенин</option><option value="Болгария">Болгария</option><option value="Боливия">Боливия</option><option value="Босния и Герцеговина">Босния и Герцеговина</option><option value="Ботсвана">Ботсвана</option><option value="Бразилия">Бразилия</option><option value="Буркина-Фасо">Буркина-Фасо</option><option value="Бурунди">Бурунди</option><option value="Бутан">Бутан</option><option value="Вануату">Вануату</option><option value="Великобритания">Великобритания</option><option value="Венгрия">Венгрия</option><option value="Венесуэла">Венесуэла</option><option value="Вьетнам">Вьетнам</option><option value="Габон">Габон</option><option value="Гаити">Гаити</option><option value="Гайана">Гайана</option><option value="Гамбия">Гамбия</option><option value="Гана">Гана</option><option value="Гватемала">Гватемала</option><option value="Гвинея">Гвинея</option><option value="Гвинея-Бисау">Гвинея-Бисау</option><option value="Германия">Германия</option><option value="Голландия">Голландия</option><option value="Гондурас">Гондурас</option><option value="Гренада">Гренада</option><option value="Гренландия">Гренландия</option><option value="Греция">Греция</option><option value="Грузия">Грузия</option><option value="Гуам">Гуам</option><option value="Дания">Дания</option><option value="Демократическая Республика Конго">Демократическая Республика Конго</option><option value="Джибути">Джибути</option><option value="Доминиканская республика">Доминиканская республика</option><option value="Египет">Египет</option><option value="Замбия">Замбия</option><option value="Зимбабве">Зимбабве</option><option value="Израиль">Израиль</option><option value="Индия">Индия</option><option value="Индонезия">Индонезия</option><option value="Иордания">Иордания</option><option value="Ирак">Ирак</option><option value="Иран">Иран</option><option value="Ирландия">Ирландия</option><option value="Исландия">Исландия</option><option value="Испания">Испания</option><option value="Италия">Италия</option><option value="Йемен">Йемен</option><option value="Кабо-Верде">Кабо-Верде</option><option value="Казахстан">Казахстан</option><option value="Камбоджа">Камбоджа</option><option value="Камерун">Камерун</option><option value="Канада">Канада</option><option value="Катар">Катар</option><option value="Кения">Кения</option><option value="Кипр">Кипр</option><option value="Киргизия">Киргизия</option><option value="Кирибати">Кирибати</option><option value="Китай">Китай</option><option value="КНДР">КНДР</option><option value="Колумбия">Колумбия</option><option value="Коморские острова">Коморские острова</option><option value="Корея (Северная)">Корея (Северная)</option><option value="Корея (Южная)">Корея (Южная)</option><option value="Коста-Рика">Коста-Рика</option><option value="Кот-д'Ивуар">Кот-д'Ивуар</option><option value="Куба">Куба</option><option value="Кувейт">Кувейт</option><option value="Лаос">Лаос</option><option value="Латвия">Латвия</option><option value="Лесото">Лесото</option><option value="Либерия">Либерия</option><option value="Ливан">Ливан</option><option value="Ливия">Ливия</option><option value="Литва">Литва</option><option value="Лихтенштейн">Лихтенштейн</option><option value="Люксембург">Люксембург</option><option value="Маврикий">Маврикий</option><option value="Мавритания">Мавритания</option><option value="Мадагаскар">Мадагаскар</option><option value="Македония">Македония</option><option value="Малави">Малави</option><option value="Малайзия">Малайзия</option><option value="Мали">Мали</option><option value="Мальдивы">Мальдивы</option><option value="Мальта">Мальта</option><option value="Марокко">Марокко</option><option value="Мартиника">Мартиника</option><option value="Мексика">Мексика</option><option value="Микронезия">Микронезия</option><option value="Мозамбик">Мозамбик</option><option value="Молдавия">Молдавия</option><option value="Монако">Монако</option><option value="Монголия">Монголия</option><option value="Мьянма">Мьянма</option><option value="Намибия">Намибия</option><option value="Непал">Непал</option><option value="Нигер">Нигер</option><option value="Нигерия">Нигерия</option><option value="Никарагуа">Никарагуа</option><option value="Новая Зеландия">Новая Зеландия</option><option value="Новая Каледония">Новая Каледония</option><option value="Норвегия">Норвегия</option><option value="ОАЭ">ОАЭ</option><option value="Оман">Оман</option><option value="Пакистан">Пакистан</option><option value="Панама">Панама</option><option value="Папуа-Новая Гвинея">Папуа-Новая Гвинея</option><option value="Парагвай">Парагвай</option><option value="Перу">Перу</option><option value="Польша">Польша</option><option value="Португалия">Португалия</option><option value="Пуэрто-Рико">Пуэрто-Рико</option><option value="Республика Конго">Республика Конго</option><option selected="" value="Россия">Россия</option><option value="Руанда">Руанда</option><option value="Румыния">Румыния</option><option value="Сальвадор">Сальвадор</option><option value="Сан-Марино">Сан-Марино</option><option value="Саудовская Аравия">Саудовская Аравия</option><option value="Свазиленд">Свазиленд</option><option value="Сенегал">Сенегал</option><option value="Сербия">Сербия</option><option value="Сингапур">Сингапур</option><option value="Сирия">Сирия</option><option value="Словакия">Словакия</option><option value="Словения">Словения</option><option value="Соломоновы острова">Соломоновы острова</option><option value="Сомали">Сомали</option><option value="Судан">Судан</option><option value="Суринам">Суринам</option><option value="США">США</option><option value="Сьерра-Леоне">Сьерра-Леоне</option><option value="Таджикистан">Таджикистан</option><option value="Таиланд">Таиланд</option><option value="Тайвань">Тайвань</option><option value="Танзания">Танзания</option><option value="Того">Того</option><option value="Тонга">Тонга</option><option value="Тринидад и Тобаго">Тринидад и Тобаго</option><option value="Тунис">Тунис</option><option value="Туркменистан">Туркменистан</option><option value="Турция">Турция</option><option value="Уганда">Уганда</option><option value="Узбекистан">Узбекистан</option><option value="Украина">Украина</option><option value="Уругвай">Уругвай</option><option value="Фиджи">Фиджи</option><option value="Филиппины">Филиппины</option><option value="Финляндия">Финляндия</option><option value="Франция">Франция</option><option value="Французская Гвиана">Французская Гвиана</option><option value="Хорватия">Хорватия</option><option value="Центральноафриканская Республика">Центральноафриканская Республика</option><option value="Чад">Чад</option><option value="Чехия">Чехия</option><option value="Чили">Чили</option><option value="Швейцария">Швейцария</option><option value="Швеция">Швеция</option><option value="Шри-Ланка">Шри-Ланка</option><option value="Эквадор">Эквадор</option><option value="Экваториальная Гвинея">Экваториальная Гвинея</option><option value="Эритрея">Эритрея</option><option value="Эстония">Эстония</option><option value="Эфиопия">Эфиопия</option><option value="ЮАР">ЮАР</option><option value="Ямайка">Ямайка</option><option value="Япония">Япония</option>
+                                            </select>
+                        </td>
+                    
+
+                    <td colspan="2">
+                        <p>Город:</p>
+                        <select name="city" class="mform__select" id="city_picker">
+                                                <option value="Barnaul">Алтайский край</option>
+                                                <option value="Belogorsk">Амурская область</option>
+                                                <option value="Arkhangelsk">Архангельская область</option>
+                                                <option value="Astrakhan">Астраханская область</option>
+                                                <option value="Belgorod">Белгородская область</option>
+                                                <option value="Bryansk">Брянская область</option>
+                                                <option value="Vladimir">Владимирская область</option>
+                                                <option value="Volgograd">Волгоградская область</option>
+                                                <option value="Vologda">Вологодская область</option>
+                                                <option value="Voronezh">Воронежская область</option>
+                                                <option value="Vladivostok">Еврейская автономная область</option>
+                                                <option value="Chita">Забайкальский край</option>
+                                                <option value="Ivanovo">Ивановская область</option>
+                                                <option value="Irkutsk">Иркутская область</option>
+                                                <option value="Kaliningrad">Калининградская область</option>
+                                                <option value="Kaluga">Калужская область</option>
+                                                <option value="Petropavlovsk">Камчатский край</option>
+                                                <option value="Kemerovo">Кемеровская область</option>
+                                                <option value="Kirov">Кировская область</option>
+                                                <option value="Kostroma">Костромская область</option>
+                                                <option value="Krasnodar">Краснодарский край</option>
+                                                <option value="Krasnoyarsk">Красноярский край</option>
+                                                <option value="Kurgan">Курганская область</option>
+                                                <option value="Kursk">Курская область</option>
+                                                <option value="Lipetsk">Липецкая область</option>
+                                                <option value="Magadan">Магаданская область</option>
+                                                <option value="Moscow">Московская область</option>
+                                                <option value="Murmansk">Мурманская область</option>
+                                                <option value="Amderma">Ненецкий автономный округ</option>
+                                                <option value="Arzamas">Нижегородская область</option>
+                                                <option value="Novgorod">Новгородская область</option>
+                                                <option value="Novosibirsk">Новосибирская область</option>
+                                                <option value="Omsk">Омская область</option>
+                                                <option value="Orenburg">Оренбургская область</option>
+                                                <option value="Orel">Орловская область</option>
+                                                <option value="Penza">Пензенская область</option>
+                                                <option value="Perm">Пермский край</option>
+                                                <option value="Vladivostok">Приморский край</option>
+                                                <option value="Pskov">Псковская область</option>
+                                                <option value="Maykop">Республика Адыгея</option>
+                                                <option value="Altay">Республика Алтай</option>
+                                                <option value="Ufa">Республика Башкортостан</option>
+                                                <option value="Ulan-Ude">Республика Бурятия</option>
+                                                <option value="Makhachkala">Республика Дагестан</option>
+                                                <option value="Nazran">Республика Ингушетия</option>
+                                                <option value="Nalchik">Республика Кабардино-Балкария</option>
+                                                <option value="Elista">Республика Калмыкия</option>
+                                                <option value="Cherkessk">Республика Карачаево-Черкессия</option>
+                                                <option value="Petrozavodsk">Республика Карелия</option>
+                                                <option value="Syktyvkar">Республика Коми</option>
+                                                <option value="Yoshkar-Ola">Республика Марий Эл</option>
+                                                <option value="Saransk">Республика Мордовия</option>
+                                                <option value="Yakutsk">Республика Саха (Якутия)</option>
+                                                <option value="Vladikavkaz">Республика Северная Осетия - Алания</option>
+                                                <option value="Kazan">Республика Татарстан</option>
+                                                <option value="Kyzyl">Республика Тыва (Тува)</option>
+                                                <option value="Izhevsk">Республика Удмуртия</option>
+                                                <option value="Abakan">Республика Хакасия</option>
+                                                <option value="Gudermes">Республика Чечня</option>
+                                                <option value="Cheboksary">Республика Чувашия</option>
+                                                <option value="Rostov-na-Donu">Ростовская область</option>
+                                                <option value="Ryazan">Рязанская область</option>
+                                                <option value="Samara">Самарская область</option>
+                                                <option value="St. Petersburg">Санкт-Петербург и Лен.Обл.</option>
+                                                <option value="Saratov">Саратовская область</option>
+                                                <option value="Yuzhno-Sakhalinsk">Сахалинская область</option>
+                                                <option value="Yekaterinburg">Свердловская область</option>
+                                                <option value="Smolensk">Смоленская область</option>
+                                                <option value="Stavropol">Ставропольский край</option>
+                                                <option value="Tambov">Тамбовская область</option>
+                                                <option value="Tver">Тверская область</option>
+                                                <option value="Tomsk">Томская область</option>
+                                                <option value="Tula">Тульская область</option>
+                                                <option value="Tyumen">Тюменская область</option>
+                                                <option value="Ulyanovsk">Ульяновская область</option>
+                                                <option value="Khabarovsk">Хабаровский край</option>
+                                                <option value="Khanty-Mansiysk">Ханты-Мансийский автономный округ - Югра</option>
+                                                <option value="Chelyabinsk">Челябинская область</option>
+                                                <option value="Anadyr">Чукотский автономный округ</option>
+                                                <option value="Nadym">Ямало-Ненецкий автономный округ</option>
+                                                <option value="Rybinsk">Ярославская область </option>                                                
+                                            </select>
+                                            <input type="hidden" value="Russia" name="country_en">
+                                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><input type="submit" class="btn btn-xs btn_red" value="OK"><input type="submit" class="btn btn-xs btn_ghost" value="Сохранить результат"></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+<h2>Ваша рейв-карта</h2>
+
+            <div id="mapresult">
+                                    <table class="mapresult--data">
+                                        <tbody>
+                                            <tr>
+                                                <td><label>Тип:</label> <strong><a href="#" class="dashed-link">Манифестор</strong></a></td>
+                                                <td><label>Профиль:</label> <strong><a href="#" class="dashed-link">1 / 4</a></strong></td>
+                                                <td><label>Определение:</label> <strong><a href="#" class="dashed-link">Тройное</a></strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Внутренний Авторитет:</label> <strong><a href="#" class="dashed-link">Эмоциональный</a></strong></td>
+                                                <td><label>Стратегия:</label> <strong><a href="#" class="dashed-link">Информировать</a></strong></td>
+                                                <td><label>Ложное Я:</label> <strong><a href="#" class="dashed-link">Гнев</a></strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"><label>Инкарнационный крест:</label><strong>Правоугольный Крест Руководства (47/22 | 45/26)</strong></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <img id="imgmap" src="http://www.jovianarchive.com/Content/Charts/628517070000000000_.png">
+                                    <form id="mailform" action="" method="post">
+                                        <input type="hidden" name="action" value="form">
+                                        <input type="hidden" name="image" value="/Content/Charts/628517070000000000_.png">
+                                        <input type="hidden" name="type" value="Манифестор">
+                                        <input type="hidden" name="profile" value="1 / 4">
+                                        <input type="hidden" name="difin" value="Тройное">
+                                        <input type="hidden" name="authority" value="Эмоциональный">
+                                        <input type="hidden" name="strategy" value="Информировать">
+                                        <input type="hidden" name="theme" value="Гнев">
+                                        <input type="hidden" name="cross" value="Правоугольный Крест Руководства (47/22 | 45/26)">
+                                    </form>
+                                </div><!-- /.end chart -->
+                                
+                            
+            </li>
+            <li>
+                <h2>Настройки приватности</h2>
+                
+            </li>
+            <li>
+                <h2>Дополнительные</h2>
+                
+            </li>
+        </ul>
+        </div>
+                                            
+                            </div><!-- /#dashboard-content -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /#dashboard -->
+        </main>
+    //= template/cabinet-footer.html
+</body>
+</html>

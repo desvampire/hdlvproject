@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>Личный кабинет</title>
+</head>
+<body>
+    //= template/header.html
+        <!-- SITE CONTENT -->
+        <main class="b_primary_content">
+        <div id="dashboard">
+            <div class="container">
+                <div class="row">
+                       //= template/cabinet-header.html
+                       <div class="col-10" id="dasboard-content">
+
+                    <!-- User Ravechart -->
+                    
+                        <div class="cab-section--title">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3>Ваша рейв-карта</h3>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#" class="btn-xs btn_ghost" data-jq-dropdown="#rave-chart-actions">Действия <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    <div id="rave-chart-actions" class="jq-dropdown jq-dropdown-tip">
+                                        <div class="jq-dropdown-panel">
+                                            <ul class="no-list rave-chart-actions--list">
+                                                <li><a href="#"><i class="fa fa-print" aria-hidden="true"></i> Распечатать</a></li>
+                                                <li><a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i> Отправить на email</a></li>
+                                                <li><a href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i> Сохранить на компьютер</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                            <div class="cab-section">    
+                                <div id="mapresult">
+                                    <table class="mapresult--data">
+                                        <tbody>
+                                            <tr>
+                                                <td><label>Тип:</label> <strong><a href="#" class="dashed-link">Манифестор</strong></a></td>
+                                                <td><label>Профиль:</label> <strong><a href="#" class="dashed-link">1 / 4</a></strong></td>
+                                                <td><label>Определение:</label> <strong><a href="#" class="dashed-link">Тройное</a></strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Внутренний Авторитет:</label> <strong><a href="#" class="dashed-link">Эмоциональный</a></strong></td>
+                                                <td><label>Стратегия:</label> <strong><a href="#" class="dashed-link">Информировать</a></strong></td>
+                                                <td><label>Ложное Я:</label> <strong><a href="#" class="dashed-link">Гнев</a></strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"><label>Инкарнационный крест:</label><strong>Правоугольный Крест Руководства (47/22 | 45/26)</strong></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <img id="imgmap" src="img/ravechart_.png" alt="ravechart">
+                                    <form id="mailform" action="" method="post">
+                                        <input type="hidden" name="action" value="form">
+                                        <input type="hidden" name="image" value="/Content/Charts/628517070000000000_.png">
+                                        <input type="hidden" name="type" value="Манифестор">
+                                        <input type="hidden" name="profile" value="1 / 4">
+                                        <input type="hidden" name="difin" value="Тройное">
+                                        <input type="hidden" name="authority" value="Эмоциональный">
+                                        <input type="hidden" name="strategy" value="Информировать">
+                                        <input type="hidden" name="theme" value="Гнев">
+                                        <input type="hidden" name="cross" value="Правоугольный Крест Руководства (47/22 | 45/26)">
+                                    </form>
+                                </div>
+                            </div>                        
+                    
+
+                    <!-- First steps -->
+                    
+                    <div class="cab-section--title">
+                                <h3>Первые шаги к познанию себя</h3>
+                            </div>
+                        <div class="cab-section">
+                        <div class="grey-main_bg m-pad">
+                            <h4>Предисловие</h4>
+                            <p>Артем,данный бодиграф представляет вашу истинную природу тот человек, которым вы родились. Знание и умение применить
+на практике информацию, которая в нем зашифрована даст вам возможность прожить свою жизнь в гармонии с собой,
+реализоваться ради цели, для который вы пришли в этот мир и оздоровить свое тело.</p>
+<h4>Рекомендации</h4>
+<p>Знакомство со своим бодиграфом - это постепенный и последовательный процесс, в котором не нужно торопиться. Подходите
+к исследованию информации согласно подсказкам далее.  Мы пошагово поможем Вам начать это удивительное и увлекательное 
+путешествие в познание себя!</p>
+<p>Желаем успехов!</p>
+                            </div>
+                        </div>
+                    
+
+                    <!-- Ravechart definition -->
+                        <div class="row">
+                        <!-- Type -->
+                            <div class="col-4">
+                            <div class="cab-section def-block">
+                                <span class="def-number--round">1</span>
+                                <h4 class="def-value">Ваш тип личности: <a href="#"><strong>Манифестор</strong></a></h4>
+                                <div class="def-tiser">
+                                    <p>Манифестор — единственный генетический тип, который может проявлять инициативу; им мечтает быть каждый. Он не должен ждать отклика, как Генераторы, приглашения — как Проекторы или прохождения лунного цикла подобно Рефлекторам. </p>
+                                    <p>Манифесторов около 8% от общего числа людей на планете, но лишь единицы из них используют свою мощь, и еще меньшее количество проживает Свой Дизайн...</p>
+                                </div>
+                                <div class="def-tiser--learnmore">
+                                    <a href="#" class="dashed-link">Читать полностью про Манифестора</a>
+                                </div>
+                                </div>
+                            </div>
+
+                        <!-- Authority -->
+                            <div class="col-4">
+                            <div class="cab-section def-block">
+                                <span class="def-number--round">2</span>
+                                <h4 class="def-value">Ваш внутренний авторитет: <a href="#"><strong>Эмоциональный</strong></a></h4>
+                                <div class="def-tiser">
+                                    <p>Прежде всего, центр солнечного сплетения — это очень мощный мотор. Тематически он связан с чувствами и эмоциями. Центр Солнечного сплетения производит волновой паттерн, который мы переживаем, как цикл от надежды к боли, от ожидания к разочарованию, от радости к отчаянию. </p>
+                                    <p>Необходимо научиться распознавать волновой паттерн и принимать...</p>
+                                </div>
+                                <div class="def-tiser--learnmore">
+                                    <a href="#" class="dashed-link">Читать полностью про Эмоциональный авторитет</a>
+                                </div> 
+                                </div>                              
+                            </div>
+
+                            <!-- Strategy -->
+                            <div class="col-4">
+                            <div class="cab-section def-block">
+                                <span class="def-number--round">3</span>
+                                <h4 class="def-value">Ваша стратегия: <a href="#"><strong>Информировать</strong></a></h4>
+                                <div class="def-tiser">
+                                    <p>Когда любой, даже смирившийся со своей судьбой, Манифестор действует, он встречает сопротивление других людей, для которых эти действия зачастую равносильны насилию и вторжению. Именно поэтому стратегия Манифестора заключается в предварительном информировании тех людей, которых данное действие может затронуть...</p>
+                                </div>
+                                <div class="def-tiser--learnmore">
+                                    <a href="#" class="dashed-link">Читать полностью про стратегию Информировать</a>
+                                </div>
+                                </div>
+                            </div>                                   
+                        </div><!-- /.row -->
+
+                        <div class="row">
+
+                            <!-- Strategy -->
+                            <div class="col-4">
+                            <div class="cab-section def-block">
+                                <span class="def-number--round">4</span>
+                                <h4 class="def-value">Ваш профиль: <a href="#"><strong>1 \ 4</strong></a></h4>
+                                <div class="def-tiser">
+                                    <p>Когда любой, даже смирившийся со своей судьбой, Манифестор действует, он встречает сопротивление других людей, для которых эти действия зачастую равносильны насилию и вторжению. Именно поэтому стратегия Манифестора заключается в предварительном информировании тех людей, которых данное действие может затронуть...</p>
+                                    <p> Глиссандирующая ритмоформула многопланово имитирует перекрестный нонаккорд. Примочка трансформирует флэнжер.</p>
+                                </div>
+                                <div class="def-tiser--learnmore">
+                                    <a href="#" class="dashed-link">Читать полностью про стратегию Информировать</a>
+                                </div>   
+                                </div>                                
+                            </div>
+
+                            <!-- Strategy -->
+                            <div class="col-4">
+                            <div class="cab-section def-block">
+                                <span class="def-number--round">5</span>
+                                <h4 class="def-value">Ваше Ложное Я: <a href="#"><strong>Гнев</strong></a></h4>
+                                <div class="def-tiser">
+                                    <p>Когда любой, даже смирившийся со своей судьбой, Манифестор действует, он встречает сопротивление других людей, для которых эти действия зачастую равносильны насилию и вторжению. Именно поэтому стратегия Манифестора заключается в предварительном информировании тех людей, которых данное действие может затронуть...</p>
+                                    <p>Аллегро mezzo forte заканчивает однокомпонентный септаккорд.</p>
+                                </div>
+                                <div class="def-tiser--learnmore">
+                                    <a href="#" class="dashed-link">Читать полностью про Ложное Я Гнев</a>
+                                </div>
+                                </div>                                  
+                            </div>                            
+
+                            <!-- Video -->
+                            <div class="col-4">
+                            <div class="cab-section def-block">
+                                <span class="def-number--round">6</span>
+                                <h4 class="def-value">Смотрите видео про <strong>Манифестора</strong></h4>
+                                <div class="def-tiser">
+                                    <p><img src="img/home_slider_1.png" alt="video1" class="responsive-img"></p>
+                                </div>
+                                <div class="def-tiser--learnmore">
+                                    <a href="#" class="dashed-link">Смотрите видео про Манифестора</a>
+                                </div>
+                                </div>                                  
+                            </div>
+
+                        </div><!-- /.row -->
+
+                    <!-- Consultations -->
+                    
+                        <div class="cab-section--title"><h3>Квалифицированная консультация</h3></div>
+                        <div class="cab-section">
+                        <div class="row">
+                            <div class="col-6">
+                                                            <div class="expert-consult-bg">
+                                    
+                                    <img src="img/Certified-pro.png" class="responsive-img float-left" alt="сертифицированый аналитик Дизайна Человека">                                  
+                                    <h4>Лицензированные аналитки системы Дизайна Человека</h4>
+                                    <p>Все преподаватели школы “HumanDesignLife” имеют профессиональную аккредитацию Международой Школы Дизайна Человека (IHDS) на оказание услуг по прочтению рейв-карты и проведению групповых занятий.</p>
+                                    <p>Проверить статус преподавателей вы можете на этой <a href="#" class="dashed-link">странице</a>.</p>
+                                    
+                                    
+                                </div>
+
+                            </div>
+                            <div class="col-6">
+                            <h4>Получите персональную консультацию</h4>
+                                                        <p>“Дизайн Человека” - это знание, которым нужно пользоваться на практике. Как и в любой другой науке, есть профессиональные преподаватели, так и в системе “Human Design” существуют аналитики,
+сертифицированные Международной Школой Дизайна Человека (International Human Design School),
+которые предоставляют свои услуги по углубленному прочтению рейв-карты и всех ее дополнительных аспектов.</p>
+<p>Мы предлагаем Вам сэкономить свое время и получить профессиональное прочтение рейв-карты. В процессе консультации вы сможете задать свои вопросы и получить развернутые ответы.</p>
+<p><a href="#" class="btn btn-default btn_red">Виды консультаций</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                                       
+
+                                                        
+</div></div>
+        </main>
+    //= template/cabinet-footer.html
+</body>
+</html>

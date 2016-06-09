@@ -1,0 +1,20 @@
+// Plugins
+
+@import "normalize";
+@import "../../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../../bower_components/reflex-grid/scss/reflex.scss";
+@import "../../bower_components/typeplate-starter-kit/scss/_typeplate-index.scss";
+
+//Project individual styles
+
+@import 'modules/_variables.scss';
+@import 'modules/_blocks.scss';
+@import 'modules/_buttons.scss';
+@import 'modules/_typography.scss';
+@import 'modules/_base.scss';
+@import 'modules/_header.scss';
+@import 'modules/_footer.scss';
+@import 'modules/_components.scss';
+@import 'modules/_forms.scss';
+@import 'modules/_dashboard.scss';
+@import 'modules/_blog.scss';
