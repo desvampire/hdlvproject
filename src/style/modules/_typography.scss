@@ -46,3 +46,19 @@ a{
 .text-right{
 	text-align: right;
 }
+
+.dark-bold-link{
+	color: $darkblue !important;
+	font-family: $haasbold;
+	&:hover{
+		color: $red;
+	}
+}
+
+.red-bold-link{
+	color: $red !important;
+	font-family: $haasbold;
+	&:hover{
+		color: $darkblue;
+	}
+}

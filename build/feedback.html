@@ -12,17 +12,18 @@
             <!--[if lt IE 8]>
                 <p class="browserupgrade">Вы используете <strong>очень старый</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> для того, чтобы сделать веб-серфинг безопасным и эффективным.</p>
             <![endif]-->
-        
+        <div id="b_site-desktop-header">
             <!-- SITE TOP BAR -->
             <div class="b_top_bar">
                 <div class="container">
     
-                    <div class="grid">
                     <!-- Phone -->
-                    <div class="grid__col-md-2 grid__col--bleed b_top_bar__phone"><span class="phone_number"><i class="icon icon-Telephone"></i> (800) <strong>600-70-70</strong></span></div>
+                    <div class="b_top_bar__phone">
+                        <span class="phone_number"><i class="icon icon-Telephone"></i> (800) <strong>600-70-70</strong></span>
+                    </div>
     
                     <!-- Sub-navigation -->
-                    <div class="grid__col-md-7 grid__col--bleed b_top_bar__sub_nav">
+                    <div class="b_top_bar__sub_nav">
                         <ul class="sub_nav">
                             <li class="sub_nav__item"><a href="#">Новости школы</a></li>
                             <li class="sub_nav__item"><a href="#">Лицензия IHDS</a></li>
@@ -32,40 +33,62 @@
                     </div>
     
                     <!-- Login -->
-                    <div class="grid__col-md-3 grid__col--bleed b_top_bar__login text-right">                    
+                    <div class="b_top_bar__login text-right">                    
                             <ul class="login_details">
                                 <li class="login_link">
                                     <a href="#" class="login_top" data-jq-dropdown="#b_top_bar__login___form-login"><i class="icon icon-Key"></i> Войти</a>
                                 </li>
                                 <li class="login_link"><a href="#" class="register_top"><i class="icon icon-Pencil"></i> Зарегестрироваться</a></li>
                             </ul>   
-                    </div>
-                </div>    
+                    </div>   
             </div>
             </div>
             <!-- PRIMARY HEADER -->
             <header class="b_primary_header">
                 <div class="container">
-                    <div class="grid grid--align-center">
+                    <div class="site-nav-wrapper">
                     <!-- Logo -->
-                    <div class="b_primary_header__logo grid__col-md-2 grid__col--bleed"><a href="index.html"><img src="img/logo.png" alt="HumanDesignLife" width="84px;" height="74px;"></a></div>
+                    <div class="b_primary_header__logo"><a href="index.html"><img src="img/logo.png" alt="HumanDesignLife" width="84px;" height="74px;"></a></div>
     
                     <!-- Navigation -->
-                    <nav class="b_primary_header__main_nav grid__col-md-10 grid__col--bleed">
+                    <nav class="b_primary_header__main_nav">
                         <ul class="site_nav">
-                            <li class="site_nav_item"><a href="start.html">С чего начать</a></li>
-                            <li class="site_nav_item"><a href="ravechart.html">Расчет карты</a></li>                        
-                            <li class="site_nav_item"><a href="lessons.html">Расписание занятий</a></li>
-                            <li class="site_nav_item"><a href="blog.html"></svg>Блог</a></li>
-                            <li class="site_nav_item"><a href="kb-sidebar.html">База знаний</a></li>
-                            <li class="site_nav_item"><a href="feedback.html">Отзывы</a></li>
-                            <li class="site_nav_item"><a href="forum.html">Форум</a></li>
+                   <li class="site_nav_item"><a href="start.html"><svg class="nav_icon icon-bulb19"><use xlink:href="#icon-bulb19"></use></svg> С чего начать</a></li>
+                            <li class="site_nav_item"><a href="ravechart.html"><svg class="nav_icon icon-rave_icon"><use xlink:href="#icon-rave_icon"></use></svg>Расчет карты</a></li>                        
+                            <li class="site_nav_item"><a href="lessons.html"><svg class="nav_icon icon-calendar-icons"><use xlink:href="#icon-calendar-icons"></use></svg>Обучение</a></li>
+                            <li class="site_nav_item"><a href="blog.html"><svg class="nav_icon icon-graduation1"><use xlink:href="#icon-graduation1"></use></svg>Блог</a></li>
+                            <li class="site_nav_item"><a href="kb-sidebar.html"><svg class="nav_icon icon-book201"><use xlink:href="#icon-book201"></use></svg>База знаний</a></li>
+                            <li class="site_nav_item"><a href="feedback.html"><svg class="nav_icon icon-message31"><use xlink:href="#icon-message31"></use></svg> Отзывы</a></li>
+                            <li class="site_nav_item"><a href="forum.html"><svg class="nav_icon icon-socialnetwork156"><use xlink:href="#icon-socialnetwork156"></use></svg>Форум</a></li>
                         </ul>
                         </nav>
-    </div>
                     </div>
-                    
-            </header>
+                </div>
+        </header>
+    </div><!-- END Desktop header -->
+    
+    <!-- Mobile header -->
+    <header class="b_site-mobile-header">
+    
+        <div class="site-mobile-nav">
+            <a href="#" class="sb-toggle-left white site-mobile-buttons" id="site-mobile-nav-trigger"><i class="icon icon-Align-Right"></i></a>
+        </div>
+    
+        <div class="site-mobile-logo">
+            <a href="www.google.com" target="_blank"><img src="img/mobile-logo.svg" alt="HumanDesignLife" class="site-mobile-logo--svg"></a>
+        </div>
+        
+        <div class="site-mobile-search">
+            <a href="#" class="white site-mobile-buttons" id="site-mobile-search-trigger"><i class="icon icon-Magnifi-Glass2"></i></a>
+        </div>
+    
+        <div class="site-mobile-search--bar">
+            <form action="#">
+                <input type="search" id="site-mobile-search--input" placeholder="Введите запрос...">
+            </form>
+        </div>
+             
+    </header>
                 <!-- Page header -->
             <header class="b_simple_page_header">
                 <!-- Хлебные крошки -->
@@ -298,15 +321,46 @@
             </div>
         </main>
     
-    
-    
-            <a href="#0" class="cd-top" title="Наверх">Наверх</a><!-- back to top -->
         </div>
+    
+        	<!-- Site menu on mobile -->
+            <div class="sb-slidebar sb-left">
+            	<div class="slidebar-content">
+            		<nav class="slidebar-content--widget">
+            			<ul class="site-mobile--navigation">
+            				<li><a href="#">С чего начать</a></li>
+            				<li><a href="#">Расчет карты</a></li>
+            				<li><a href="#">Расписание занятий</a></li>
+            				<li><a href="#">Блог</a></li>
+            				<li><a href="#">База знаний</a></li>
+            				<li><a href="#">Отзывы</a></li>
+            				<li><a href="#">Форум</a></li>
+            			</ul>
+            		</nav>
+    
+            		<div class="slidebar-content--widget">
+            			<ul class="site-mobile--links">
+            				<li><a href="#">Новости школы</a></li>
+            				<li><a href="#">Лицензия IHDS</a></li>
+            				<li><a href="#">Наши преподаватели</a></li>
+            				<li><a href="#">Контакты</a></li>
+            			</ul>
+            		</div>
+    
+            		<div class="slidebar-content--widget">
+            			<ul class="site-mobile--links">
+            				<li><a href="#" class="dark-bold-link">Войти на сайт</a></li>
+            				<li><a href="#" class="red-bold-link">Зарегистрироваться</a></li>
+            			</ul>
+            		</div>
+    
+    
+            	</div><!-- /end .slidebar-content -->        	
+            </div> <!-- /end .slidebar-itself -->   
             <script src="js/jquery.min.js"></script>
             <script src="js/jquery.flexslider-min.js"></script>
             <script src="js/slidebars.min.js"></script>
             <script src="js/main.js"></script>
-            
         </body>
     </html>
 </body>

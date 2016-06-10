@@ -5,9 +5,14 @@
 /*  Prevents Flickering  */
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
-	-ms-backface-visibility: hidden;	
+	-ms-backface-visibility: hidden;
+	@include media-query('md', 'desktop-first') {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .icon{
 	display: inline-block;
 }
+
