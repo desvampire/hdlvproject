@@ -16,3 +16,35 @@
 	display: inline-block;
 }
 
+img{
+	max-width: 100%;
+}
+
+// List styles
+
+.inline-list{
+	li{
+		display: inline-block;
+		margin-right: 5px;
+	}
+}
+
+.square{
+	li{
+		list-style-type: square;
+	}
+}
+
+.white-bg{
+	background: $white;
+}
+
+.maingrey-bg{
+	background: $grey-main;
+}
+
+// Icons
+
+.icon{
+	display: inline-block;
+}

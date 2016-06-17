@@ -1,0 +1,180 @@
+//Breadcrumbs
+
+.breadcrumbs{
+	text-align: center;
+}
+
+.breadcrumbs-post{
+	text-align: left;
+}
+
+.breadcrumb__links-dark{
+	li{
+		a{
+			color: $darkblue;
+			border-bottom: 1px solid $darkblue;
+			&:hover,&:focus{
+				color: $red;
+				border-bottom-color: $red;
+			}
+		}
+	}
+}
+
+.breadcrumb__links{
+	li{
+		display: inline-block;
+		margin-right: 5px;
+		&:after{
+			content: '/';
+			padding-left: 5px;
+		}
+		&:last-child:after{
+			content: none;
+		}
+	}
+}
+
+//Simple page header
+
+.b_simple_page_header{
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+
+// Courses
+
+.lesson-card{
+	border: 1px solid $grey-main;
+	max-width: 392px;
+}
+
+.lesson-card--desc{
+	background: #FFF;
+	padding: 0 12px 12px;
+}
+
+// Page sidebar
+
+#b_page-left-sidebar{
+	margin-top: 2em;
+}
+
+.b_page-left-sidebar__content-wrapper{
+    @include media-query('lg', 'mobile-first') {
+        width: 780px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.b_page-left-sidebar__content{
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+
+.page-sidebar__left{
+	border-right: 1px solid $grey-main;
+}
+
+.page-sidebar__links{
+	li{
+		margin-bottom: 5px;
+		a{
+			color: $darkblue;
+			&:hover{
+				color: $red;
+			}
+		}
+	}
+}
+
+.page-sidebar{
+	.page-sidebar__widget{
+		&:first-child{
+			padding-top: 0;
+		}
+	}
+}
+
+.page-sidebar__widget{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid $grey-main;
+}
+
+.b_email_subscribe-in-content{
+	background: rgb(150,154,169);
+	padding: 10px 20px 20px 20px;
+}
+
+.after-content__widget{
+	margin-bottom: 2em;
+}
+
+#kb-sidebar{
+    @include media-query('md', 'desktop-first') {
+        display: none;
+    }	
+}
+
+.lessons-navigation{
+	background-color: $grey-main;
+	text-align: center;
+}
+
+.lessons-navigation__links{
+	li{
+		a{
+			padding: 1.5em 0;
+			display: block;
+		}
+		@include media-query('md', 'desktop-first') {
+        	display: block;
+        	margin: 0;
+        	a{
+        		padding: 0.5em;
+        		border-bottom: 1px solid $grey;
+        	}
+    	}
+		display: inline-block;
+		margin-right: 2em;
+		font-size: 2em;
+	}
+}
+
+.lessons-navigation__links--active{
+		a{
+			position: relative;
+			color: $red;
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: calc(50% - 22px);
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 20px 20px 20px;
+			border-color: transparent transparent #ffffff transparent;
+	}
+	@include media-query('md', 'desktop-first') {
+			&:after{
+				display: none;
+			}
+		}
+	}
+	}
+	
+
+
+
+.b_lesson__time__day{
+	font-size: 4rem;
+}
+
+.b_lesson__time__month{
+	font-size: 1.2rem;
+}

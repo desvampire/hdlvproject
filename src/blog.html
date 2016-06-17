@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head lang="ru">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
-    <title>New project</title>
-</head>
-<body>
+    //= template/head.html
     //= template/header.html
             <!-- Page header -->
             <header class="b_simple_page_header">
@@ -19,206 +10,306 @@
                     </ul>
                 </div>
                 <!-- Заголовок страницы -->
-                    <h1 class="page_title text-center">Блог</h1>
+                    <h1 class="page_title typl8-beta text-center">Блог</h1>
             </header>    
         <!-- SITE CONTENT -->
-        <main class="b_primary_content">
-            <div class="container">
+        <main class="b_primary_content" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+            
+            <!-- Featured posts -->
+        <div class="container">
+            <div class="b_featured-posts">
                 <div class="grid">
-                    <!-- Blog posts start -->
-                    <div class="grid__col-md-9 grid__col--bleed">
-                    <div class="blog-list">
-                        <!-- Single article -->
-                        <article class="blog-list--post">
-                            <!-- Article time -->
-                            <div class="post-time">
-                                <span class="post-time--date">18</span>
-                                <span class="post-time--month">сен</span>
-                                <span class="post-time--year">2016</span>
+                    
+                    <!-- XL POST -->
+                    <section class="grid__col-12 grid__col-md-7 grid__col--bleed featured-post">
+                        <div class="grid__cell">
+                            <div class="featured-post__xl">  
+                            <a href="blog-single.html" class="cover-trigger"></a>
+                            <a href="blog-single.html" class="example-img-grid example-focus" style="background-image:url('../img/post-xl.jpg');">
+                                <div class="example-img-grid-footer"><h4 class="white">Стратегия - это конституция, Авторитет - это судья.</h4></div>                               
+                            </a>
+                                    <ul class="featured-post_content--info">
+                                        <li>Дизайн Человека</li>
+                                        <li>10.06.2016</li>
+                                    </ul>                             
                             </div>
-
-                            <!-- Exerpt -->
-                            <div class="post-preview">
-                                <div class="post-preview--content">
-                                    <h4 class="post-preview--link"><a href="blog-single.html">Газета «Деловой Петербург» о системе «Дизайн Человека»</a></h4>
-                                    <p class="post-preview--teaser">Построение бренда концентрирует межличностный выставочный стенд, полагаясь на инсайдерскую информацию. Адекватная ментальность транслирует эмпирический рекламный клаттер, отвоевывая рыночный сегмент.</p>
-                                </div>
-                                <!-- Tags -->
-                                <div class="post-preview--tags">
-                                    <ul class="no-list">
-                                        <li><a href="#">Артем Ануфриев</a></li>
-                                        <li><a href="#">Human Design Life</a></li>
-                                        <li><a href="#">Репортаж события</a></li>
-                                    </ul>
-                                </div>
+                        </div>                           
+                                               
+                            
+                    </section>
+                    
+                    <div class="grid__col-12 grid__col-md-5 grid__col--bleed">
+                    
+                    <div class="grid">
+                    
+                    <!-- M POST -->
+                    <section class="grid__col-12 grid__col--bleed featured-post">
+                        <div class="grid__cell">
+                            <div class="featured-post__m">
+                            <a href="#" class="cover-trigger"></a>                       
+                            <a href="#" class="example-img-grid example-focus" style="background-image:url('../img/post-m.jpg')">
+                                <div class="example-img-grid-footer"><h4 class="typl8-delta white">Я – Эмоциональный. Самое большое открытие.</h4></div>
+                                    <ul class="featured-post_content--info">
+                                        <li>Дизайн Человека</li>
+                                        <li itemprop="datePublished"s>10.06.2016</li>
+                                    </ul>                                
+                            </a>
                             </div>
-                        </article>                        
-
-                        <!-- Single article -->
-                        <article class="blog-list--post">
-                            <!-- Article time -->
-                            <div class="post-time">
-                                <span class="post-time--date">01</span>
-                                <span class="post-time--month">сен</span>
-                                <span class="post-time--year">2016</span>
+                        </div>                                                   
+                    </section>
+                    
+                    <!-- S POST -->
+                    <section class="grid__col-md-6 grid__col-12 grid__col--bleed featured-post">
+                        <div class="grid__cell">
+                            <div class="featured-post__s">  
+                            <a href="#" class="cover-trigger"></a>                     
+                            <a href="#" class="example-img-grid example-focus" style="background-image:url('../img/post-s.jpg');">
+                            <div class="example-img-grid-footer"><h4 class="typl8-zeta white">Что предпринимают люди, чтобы перестать проживать тему «ложного я» своего типа?</h4></div>
+                                    <ul class="featured-post_content--info">
+                                        <li>Дизайн Человека</li>
+                                        <li itemprop="datePublished">10.06.2016</li>
+                                    </ul>                                
+                            </a>
                             </div>
-
-                            <!-- Exerpt -->
-                            <div class="post-preview">
-                                <div class="post-preview--content">
-                                    <h4 class="post-preview--link"><a href="#">Модальный алеаторически выстроенный бесконечный канон с полизеркальной векторно-голосовой структурой в XXI веке</a></h4>
-                                    <p class="post-preview--teaser">Контрапункт контрастных фактур многопланово имеет контрапункт контрастных фактур, таким образом конструктивное состояние всей музыкальной ткани или какой-либо из составляющих ее субструктур.</p>
-                                </div>
-                                <!-- Tags -->
-                                <div class="post-preview--tags">
-                                    <ul class="no-list">
-                                        <li><a href="#">Артем Ануфриев</a></li>
-                                        <li><a href="#">Human Design Life</a></li>
-                                        <li><a href="#">Репортаж события</a></li>
-                                    </ul>
-                                </div>
+                        </div>                    
+                        </section>
+                                
+                    
+                    <section class="grid__col-md-6 grid__col-12 grid__col--bleed featured-post">
+                        <div class="grid__cell">
+                            <div class="featured-post__s">
+                            <a href="#" class="cover-trigger"></a>                      
+                            <a href="#" class="example-img-grid example-focus" style="background-image:url('../img/post-s2.png');">
+                            <div class="example-img-grid-footer"><h4 class="typl8-zeta white">Все что вы хотели знать о Лунных циклах</h4></div>
+                            </a>
+                                    <ul class="featured-post_content--info">
+                                        <li>Дизайн Человека</li>
+                                        <li itemprop="datePublished">10.06.2016</li>
+                                    </ul>                            
                             </div>
-                        </article>                        
-
-                        <!-- Single article -->
-                        <article class="blog-list--post">
-                            <!-- Article time -->
-                            <div class="post-time">
-                                <span class="post-time--date">18</span>
-                                <span class="post-time--month">сен</span>
-                                <span class="post-time--year">2016</span>
+                        </div>                    
+                    </section>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- END FEATURED POSTS -->
 
-                            <!-- Exerpt -->
-                            <div class="post-preview">
-                                <div class="post-preview--content">
-                                    <h4 class="post-preview--link"><a href="#">Газета «Деловой Петербург» о системе «Дизайн Человека»</a></h4>
-                                    <p class="post-preview--teaser">Построение бренда концентрирует межличностный выставочный стенд, полагаясь на инсайдерскую информацию. Адекватная ментальность транслирует эмпирический рекламный клаттер, отвоевывая рыночный сегмент.</p>
-                                </div>
-                                <!-- Tags -->
-                                <div class="post-preview--tags">
-                                    <ul class="no-list">
-                                        <li><a href="#">Артем Ануфриев</a></li>
-                                        <li><a href="#">Human Design Life</a></li>
-                                        <li><a href="#">Репортаж события</a></li>
-                                    </ul>
-                                </div>
+    <!-- Latest posts block -->
+    <div class="container">
+        <!-- Section posts block title -->
+        <section class="latest-posts blog-section">
+            <h2 class="red typl8-gamma text-center">Свежие статьи</h2>
+
+            <!-- Grid of latest posts -->
+            <ul class="grid">
+                <li class="grid__col-md-3 grid__col-12">
+                    <article class="post-card post-card__simple" role="article">
+                        <a href="#" class="post-card__thumbnail" style="background-image: url('../img/post-card-normal.jpg')"></a>
+                        <div class="post-card__content">
+                            <h4 class="post-card__content--title typl8-delta"><a href="#" rel="bookmark" class="dark-link">Близкий нулевой меридиан глазами современников</a></h4>
+                                <ul class="inline-list small grey">
+                                    <li itemprop="datePublished">Сен 13, 20</li>
+                                    <li>32</li>
+                                    <li>2</li>
+                                    <li>0</li>
+                                </ul>
+                        </div>
+                    </article>
+                </li>
+                <li class="grid__col-md-3 grid__col-12">
+                    <article class="post-card post-card__simple" role="article">
+                        <a href="#" class="post-card__thumbnail" style="background-image: url('../img/post-card-normal2.jpg')"></a>
+                        <div class="post-card__content">
+                            <h4 class="post-card__content--title typl8-delta"><a href="#" rel="bookmark" class="dark-link">Первоначальный аргумент перигелия — актуальная национальная задача</a></h4>
+                                <ul class="inline-list small grey">
+                                    <li itemprop="datePublished">Сен 13, 20</li>
+                                    <li>32</li>
+                                    <li>2</li>
+                                    <li>0</li>
+                                </ul>
+                        </div>
+                    </article>
+                </li>
+                <li class="grid__col-md-3 grid__col-12">
+                    <article class="post-card post-card__simple" role="article">
+                        <a href="#" class="post-card__thumbnail" style="background-image: url('../img/post-card-normal3.jpg')"></a>
+                        <div class="post-card__content">
+                            <h4 class="post-card__content--title typl8-delta"><a href="#" rel="bookmark" class="dark-link">Первоначальный космический мусор: основные моменты</a></h4>
+                                <ul class="inline-list small grey">
+                                    <li itemprop="datePublished">Сен 13, 20</li>
+                                    <li>32</li>
+                                    <li>2</li>
+                                    <li>0</li>
+                                </ul>
+                        </div>
+                    </article>
+                </li>
+                <li class="grid__col-md-3 grid__col-12">
+                    <article class="post-card post-card__simple" role="article">
+                        <a href="#" class="post-card__thumbnail" style="background-image: url('../img/post-card-normal4.jpg')"></a>
+                        <div class="post-card__content">
+                            <h4 class="post-card__content--title typl8-delta"><a href="#" rel="bookmark" class="dark-link">Почему теоретически возможен радиант?</a></h4>
+                                <ul class="inline-list small grey">
+                                    <li itemprop="datePublished">Сен 13, 20</li>
+                                    <li>32</li>
+                                    <li>2</li>
+                                    <li>0</li>
+                                </ul>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <!-- posts from category -->
+        <section class="blog-section">
+            <div class="grid">
+                <!-- posts from category -->
+                <div class="grid__col-md-4 grid__col-12">
+                    <h2 class="red typl8-gamma posts-block-title"><span class="small grey haasreg">Рубрика:</span><a href="#" class="red-link">Дизайн Человека</a></h2>
+                        <article class="featured-post" role="article">
+                            <div class="featured-post__s">
+                            <a href="#" class="cover-trigger"></a>                      
+                            <a href="#" class="example-img-grid example-focus" style="background-image:url('../img/post-cat.png');">
+                            <div class="example-img-grid-footer"><h4 class="typl8-delta white">Все что вы хотели знать о Лунных циклах</h4></div>
+                            </a>
+                            <ul class="featured-post_content--info">
+                                <li>Дизайн Человека</li>
+                                <li itemprop="datePublished">10.06.2016</li>
+                            </ul>                            
                             </div>
-                        </article>                        
+                        </article>
+                    <!-- Latest posts from that category -->
+                    <div class="latest-posts__from-category">
+                        <ul>
+                            <li><a class="latest-posts__from-category--link dark-link" href="#">Случайный перигелий: методология и особенности. Почему интуитивно понятен спектральный класс?</a></li>
+                            <li><a class="latest-posts__from-category--link dark-link" href="#">Вращательный Южный Треугольник в XXI веке</a></li>
+                            <li><a class="latest-posts__from-category--link dark-link" href="#">Космический апогей: гипотеза и теории.</a></li>
+                        </ul>
+                    </div>
+                </div>                
 
-                        <!-- Single article -->
-                        <article class="blog-list--post">
-                            <!-- Article time -->
-                            <div class="post-time">
-                                <span class="post-time--date">18</span>
-                                <span class="post-time--month">сен</span>
-                                <span class="post-time--year">2016</span>
-                            </div>
-
-                            <!-- Exerpt -->
-                            <div class="post-preview">
-                                <div class="post-preview--content">
-                                    <h4 class="post-preview--link"><a href="#">Газета «Деловой Петербург» о системе «Дизайн Человека»</a></h4>
-                                    <p class="post-preview--teaser">Построение бренда концентрирует межличностный выставочный стенд, полагаясь на инсайдерскую информацию. Адекватная ментальность транслирует эмпирический рекламный клаттер, отвоевывая рыночный сегмент.</p>
-                                </div>
-                                <!-- Tags -->
-                                <div class="post-preview--tags">
-                                    <ul class="no-list">
-                                        <li><a href="#">Артем Ануфриев</a></li>
-                                        <li><a href="#">Human Design Life</a></li>
-                                        <li><a href="#">Репортаж события</a></li>
-                                    </ul>
-                                </div>
+                <!-- posts from category -->
+                <div class="grid__col-md-4 grid__col-12">
+                <h2 class="red typl8-gamma posts-block-title"><span class="small grey haasreg">Рубрика:</span><a href="#" class="red-link">Взаимотношения</a></h2>
+                        <article class="featured-post" role="article">
+                            <div class="featured-post__s">
+                            <a href="#" class="cover-trigger"></a>                      
+                            <a href="#" class="example-img-grid example-focus" style="background-image:url('../img/post-cat2.png');">
+                            <div class="example-img-grid-footer"><h4 class="typl8-delta white">Все что вы хотели знать о Лунных циклах</h4></div>
+                            </a>
+                            <ul class="featured-post_content--info">
+                                <li>Дизайн Человека</li>
+                                <li itemprop="datePublished">10.06.2016</li>
+                            </ul>                            
                             </div>
                         </article>
 
-                        <!-- Advertise banner -->
-                        <div class="blog-list--banner">
-                            <a href="#"><img src="img/demo-banner-790x70.gif" alt="demo"></a>
+                    <!-- Latest posts from that category -->
+                    <div class="latest-posts__from-category">
+                        <ul>
+                            <li><a class="latest-posts__from-category--link dark-link" href="#">Случайный перигелий: методология и особенности. Почему интуитивно понятен спектральный класс?</a></li>
+                            <li><a class="latest-posts__from-category--link dark-link" href="#">Вращательный Южный Треугольник в XXI веке</a></li>
+                            <li><a class="latest-posts__from-category--link dark-link" href="#">Космический апогей: гипотеза и теории.</a></li>
+                        </ul>
+                    </div>
+                </div>                
+
+                <!-- posts from category -->
+                <div class="grid__col-md-4 grid__col-12">
+                    <h2 class="red typl8-gamma posts-block-title"><span class="small grey haasreg">Рубрика:</span><a href="#" class="red-link">Здоровье</a></h2>
+                        <div class="featured-post">
+                            <div class="featured-post__s">
+                            <a href="#" class="cover-trigger"></a>                      
+                            <a href="#" class="example-img-grid example-focus" style="background-image:url('../img/post-cat3.png');">
+                            <div class="example-img-grid-footer"><h4 class="typl8-delta white">Все что вы хотели знать о Лунных циклах</h4></div>
+                            </a>
+                            <ul class="featured-post_content--info">
+                                <li>Дизайн Человека</li>
+                                <li itemprop="datePublished">10.06.2016</li>
+                            </ul>                            
+                            </div>
                         </div>
-                        <!-- Single article -->
-                        <article class="blog-list--post">
-                            <!-- Article time -->
-                            <div class="post-time">
-                                <span class="post-time--date">18</span>
-                                <span class="post-time--month">сен</span>
-                                <span class="post-time--year">2016</span>
-                            </div>
 
-                            <!-- Exerpt -->
-                            <div class="post-preview">
-                                <div class="post-preview--content">
-                                    <h4 class="post-preview--link"><a href="#">Газета «Деловой Петербург» о системе «Дизайн Человека»</a></h4>
-                                    <p class="post-preview--teaser">Построение бренда концентрирует межличностный выставочный стенд, полагаясь на инсайдерскую информацию. Адекватная ментальность транслирует эмпирический рекламный клаттер, отвоевывая рыночный сегмент.</p>
-                                </div>
-                                <!-- Tags -->
-                                <div class="post-preview--tags">
-                                    <ul class="no-list">
-                                        <li><a href="#">Артем Ануфриев</a></li>
-                                        <li><a href="#">Human Design Life</a></li>
-                                        <li><a href="#">Репортаж события</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </article>                        
+                    <!-- Latest posts from that category -->
+                    <div class="latest-posts__from-category">
+                        <ul>
+                            <li><a class="latest-posts__from-category--link dark-link" href="#">Случайный перигелий: методология и особенности. Почему интуитивно понятен спектральный класс?</a></li>
+                            <li><a class="latest-posts__from-category--link dark-link" href="#">Вращательный Южный Треугольник в XXI веке</a></li>
+                            <li><a class="latest-posts__from-category--link dark-link" href="#">Космический апогей: гипотеза и теории.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </div><!-- end of all latest posts container -->
 
-                        <!-- Single article -->
-                        <article class="blog-list--post">
-                            <!-- Article time -->
-                            <div class="post-time">
-                                <span class="post-time--date">18</span>
-                                <span class="post-time--month">сен</span>
-                                <span class="post-time--year">2016</span>
+    <!-- blog widgets -->
+    <div class="container">
+        <div class="grid">
+            <div class="grid__col-md-4 grid__col-12">
+                    <h2 class="red typl8-gamma posts-block-title"><span class="small grey haasreg">Рубрика:</span><a href="#" class="red-link">Видео-материалы</a></h2>
+                        <article class="featured-post" role="article">
+                            <div class="featured-post__s">
+                            <a href="blog-single.html" class="cover-trigger"></a>                      
+                            <a href="blog-single.html" class="example-img-grid example-focus" style="background-image:url('../img/Ra-3.jpg');">
+                            <div class="example-img-grid-footer"><h4 class="typl8-delta white">Документальный фильм: "Как появился Дизайн Человека"?</h4></div>
+                            </a>
+                            <ul class="featured-post_content--info">
+                                <li>Дизайн Человека</li>
+                                <li itemprop="datePublished">10.06.2016</li>
+                            </ul>                            
                             </div>
+                        </article>
 
-                            <!-- Exerpt -->
-                            <div class="post-preview">
-                                <div class="post-preview--content">
-                                    <h4 class="post-preview--link"><a href="#">Газета «Деловой Петербург» о системе «Дизайн Человека»</a></h4>
-                                    <p class="post-preview--teaser">Построение бренда концентрирует межличностный выставочный стенд, полагаясь на инсайдерскую информацию. Адекватная ментальность транслирует эмпирический рекламный клаттер, отвоевывая рыночный сегмент.</p>
-                                </div>
-                                <!-- Tags -->
-                                <div class="post-preview--tags">
-                                    <ul class="no-list">
-                                        <li><a href="#">Артем Ануфриев</a></li>
-                                        <li><a href="#">Human Design Life</a></li>
-                                        <li><a href="#">Репортаж события</a></li>
-                                    </ul>
-                                </div>
+                    <!-- Latest posts from that category -->
+                    <div class="latest-posts__from-category">
+                        <ul>
+                            <li><a class="latest-posts__from-category--link dark-link" href="#">Случайный перигелий: методология и особенности. Почему интуитивно понятен спектральный класс?</a></li>
+                            <li><a class="latest-posts__from-category--link dark-link" href="#">Вращательный Южный Треугольник в XXI веке</a></li>
+                            <li><a class="latest-posts__from-category--link dark-link" href="#">Космический апогей: гипотеза и теории.</a></li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="grid__col-md-4 grid__col-12">
+                    <h2 class="red typl8-gamma posts-block-title"><span class="small grey haasreg">Рубрика:</span><a href="#" class="red-link">Наши новости</a></h2>
+                        <article class="featured-post" role="article">
+                            <div class="featured-post__s">
+                            <a href="#" class="cover-trigger"></a>                      
+                            <a href="#" class="example-img-grid example-focus" style="background-image:url('../img/school-mates.png');">
+                            <div class="example-img-grid-footer"><h4 class="typl8-delta white">Курс "Проживая свой дизайн" в г.Москва успешно состоялся!</h4></div>
+                            </a>
+                            <ul class="featured-post_content--info">
+                                <li>Дизайн Человека</li>
+                                <li itemprop="datePublished">10.06.2016</li>
+                            </ul>                            
                             </div>
-                        </article>                        
-                    </div><!-- .blog-list -->
-                    </div><!-- .col-8 -->
+                        </article>
 
-                    <!-- Sidebar -->
-                    <div class="grid__col-md-3">
-                        <aside class="blog-sidebar">
+                    <!-- Latest posts from that category -->
+                    <div class="latest-posts__from-category">
+                        <ul>
+                            <li><a class="latest-posts__from-category--link dark-link" href="#">Случайный перигелий: методология и особенности. Почему интуитивно понятен спектральный класс?</a></li>
+                            <li><a class="latest-posts__from-category--link dark-link" href="#">Вращательный Южный Треугольник в XXI веке</a></li>
+                            <li><a class="latest-posts__from-category--link dark-link" href="#">Космический апогей: гипотеза и теории.</a></li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="grid__col-md-4 grid__col-12">
                             <!-- Sidebar widget -->
                             <div class="blog-sidebar--widget">
-                                <h4 class="widget-title">Категории</h4>
-                                <ul class="categories-widget">
-                                    <li><a href="#">Статьи</a></li>
-                                    <li><a href="#">Эксперимент</a></li>
-                                    <li><a href="#">Новости школы</a></li>
-                                    <li><a href="#">Дизайн Человека</a></li>
-                                    <li><a href="#">Видео-материалы</a></li>
-                                    <li><a href="#">Аудио-материалы</a></li>
-                                </ul>
-                            </div>                            
-
-                            <!-- Sidebar widget -->
-                            <div class="blog-sidebar--widget">
-                                <h4 class="widget-title">Подписка на новости</h4>
-                                <span>Получайте полезные статьи и бесплатные материалы к себе на почту!</span>
+                                <h4 class="widget-title typl8-delta">Подписка на новости</h4>
+                                <div class="email-widget"><img src="img/envelope-yellow-icon.png" alt="email подписка"><span>Получайте полезные статьи и бесплатные материалы к себе на почту!</span><br><span class="grey small">1 раз месяц, защищено от спама.</span></div>
                                 <form action="#" class="email-subscribe-main">
                                     <input type="text" placeholder="Введите свой email" class="client-email-subscribe">
                                     <input type="submit" value="ОК" class="btn btn-primary btn_red client-email-subscribe--ok">
                                 </form>
-                            </div>                            
-
+                            </div>
                             <!-- Sidebar widget -->
                             <div class="blog-sidebar--widget">
-                                <h4 class="widget-title">Мы в социальных сетях</h4>
+                                <h4 class="widget-title typl8-delta">Мы в социальных сетях</h4>
                                 <span>Присоединятесь в соц.сетях</span>
                                 <ul class="get-social-widget">
                                     <li><a href="#"><img src="img/sprite/vk-square.png" alt="группа вконтакте"></a></li>
@@ -226,22 +317,11 @@
                                     <li><a href="#"><img src="img/sprite/youtube-square.png" alt="канала youtube"></a></li>
                                     <li><a href="#"><img src="img/sprite/twiter-square.png" alt="наш твиттер"></a></li>
                                 </ul>                                
-                            </div>                            
-
-                            <!-- Sidebar widget -->
-                            <div class="blog-sidebar--widget">
-                                <h4 class="widget-title">Поиск статей</h4>
-                                <form action="#">
-                                    <input type="text" name="search" placeholder="Поиск..." class="sidebar-search">
-                                </form>                                
-                            </div>
-                        </aside>
-                    </div>
-                </div><!-- .row -->
-
+                            </div> 
             </div>
+        </div>
+    </div>
+                
 
         </main>
     //= template/footer.html
-</body>
-</html>

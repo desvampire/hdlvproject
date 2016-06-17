@@ -10,7 +10,6 @@
             <meta name="description" content="">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="css/main.css">
-            <link rel="stylesheet" href="css/icomoon.css">
     
             <!--[if lt IE 9]>
                 <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
@@ -117,14 +116,14 @@
             </div>
             </div>
             <!-- PRIMARY HEADER -->
-            <header class="b_primary_header">
+            <header class="b_primary_header"  role="banner" itemscope itemtype="http://schema.org/WPHeader">
                 <div class="container">
                     <div class="site-nav-wrapper">
                     <!-- Logo -->
-                    <div class="b_primary_header__logo"><a href="index.html"><img src="img/logo.png" alt="HumanDesignLife" width="84px;" height="74px;"></a></div>
+                    <div class="b_primary_header__logo" itemscope itemtype="http://schema.org/Organization"><a href="index.html"><img src="img/logo.png" alt="HumanDesignLife" width="84" height="74"></a></div>
     
                     <!-- Navigation -->
-                    <nav class="b_primary_header__main_nav">
+                    <nav class="b_primary_header__main_nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
                         <ul class="site_nav">
                    <li class="site_nav_item"><a href="start.html"><svg class="nav_icon icon-bulb19"><use xlink:href="#icon-bulb19"></use></svg> С чего начать</a></li>
                             <li class="site_nav_item"><a href="ravechart.html"><svg class="nav_icon icon-rave_icon"><use xlink:href="#icon-rave_icon"></use></svg>Расчет карты</a></li>                        
@@ -144,7 +143,7 @@
     <header class="b_site-mobile-header">
     
         <div class="site-mobile-nav">
-            <a href="#" class="sb-toggle-left white site-mobile-buttons" id="site-mobile-nav-trigger"><i class="icon icon-Align-Right"></i></a>
+            <a href="#" class="sb-toggle-left white site-mobile-buttons" id="site-mobile-nav-trigger"><i class="icon icon-bars icon-bars-dims"></i></a>
         </div>
     
         <div class="site-mobile-logo">
@@ -152,7 +151,7 @@
         </div>
         
         <div class="site-mobile-search">
-            <a href="#" class="white site-mobile-buttons" id="site-mobile-search-trigger"><i class="icon icon-Magnifi-Glass2"></i></a>
+            <a href="#" class="white site-mobile-buttons" id="site-mobile-search-trigger"></a>
         </div>
     
         <div class="site-mobile-search--bar">
@@ -166,8 +165,96 @@
         <main class="b_primary_content content slide">
 			
         </main>
+            
+            <!-- FOOTER -->
+            <footer class="b_primary_footer" id="b_site_footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+                
+                <div class="b_site_information">
+                        <div class="container">
+                            <div class="grid">
+                            <div class="grid__col-12 grid__col-md-4">
+                                <ul class="no-list footer_contacts">
+                                    <li>8(800)700-60-00</li>
+                                    <li><span class="envelope_white_icon"></span> <a href="mailto:info@hdlife.center">info@hdlife.center</a></li>
+                                </ul>
+                                <p class="copyright">Human Design Life - это школа системы Дизайна Человека, состоящая из сертифицированных преподавателей. Мы проводим классические и профессиональные курсы по системе Дизайна Человека, оказываем консультации по индивидуальному прочтению рейв-карты, здоровья (PHS) и бизнес-консультации (BG5).</p>
+       
+                            </div>
     
-        </div>
+                            <div class="grid__col-12 grid__col-md-2">
+                                <div class="b_site_information__sub_nav">
+                                    <h4 class="sub_nav__title">О Дизайне Человека</h4>
+                                    <ul class="no-list">
+                                    <li class="sub_nav_item_dark"><a href="#">Сделать свою рейв-карту</a></li>
+                                    <li class="sub_nav_item_dark"><a href="#">Как это работает?</a></li>
+                                    <li class="sub_nav_item_dark"><a href="#">С чего начать?</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Концепции науки</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">История появления</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">База знаний</a></li>
+                                        
+                                    </ul>
+                                </div>                            
+                            </div>
+    
+                            <div class="grid__col-12 grid__col-md-2">
+                                <div class="b_site_information__sub_nav">
+                                    <h4 class="sub_nav__title">Консультации</h4>
+                                    <ul class="no-list">
+                                        <li class="sub_nav_item_dark"><a href="#">Прочтение рейв-карты</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Прочтение рейв-карты ребенка</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Прочтение здоровья (PHS)</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Аналитика взаимоотношений</a></li>
+                                    </ul>
+                                </div>                            
+                            </div>                                                  
+    
+                            <div class="grid__col-12 grid__col-md-2">
+                                <div class="b_site_information__sub_nav">
+                                    <h4 class="sub_nav__title">Рубрики блога</h4>
+                                    <ul class="no-list">
+                                        <li class="sub_nav_item_dark"><a href="#">Дизайн Человека</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Взаимоотношения</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Здоровье</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Видео-материалы</a></li>
+                                    </ul>
+                                </div>                            
+                            </div>                                              
+    
+                            <div class="grid__col-12 grid__col-md-2">
+                                <div class="b_site_information__sub_nav">
+                                    <h4 class="sub_nav__title">О нас</h4>
+                                    <ul class="no-list">
+                                        <li class="sub_nav_item_dark"><a href="#">Мы в лицах</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Фото-отчеты</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Новости</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Лицензии IHDS</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Для прессы</a></li>
+                                        <li class="sub_nav_item_dark"><a href="#">Свяжитесь с нами</a></li>
+                                    </ul>
+                                </div>                            
+                            </div>
+                        </div>
+    
+                        <div class="grid b_primary_footer__bottom">
+                            <div class="grid__col-12 grid__col-md-7">
+                                <p class="copyright small">Рейв-карта(бодиграф, rave-chart, The Rave BodyGraph™, Rave Mandala™) - это интеллектуальная, запатентованная собственность компании Jovian Archive Media Inc и представлена на этом сайтом только в ознакомительных целях.</p>
+                            </div>
+    
+                            <div class="grid__col-12 grid__col-md-5 text-right">
+                                    <ul class="get-social-widget">
+                                        <li><a href="#"><img src="img/sprite/vk-square.png" alt="группа вконтакте"></a></li>
+                                        <li><a href="#"><img src="img/sprite/facebook-square.png" alt="группа фейсбук"></a></li>
+                                        <li><a href="#"><img src="img/sprite/youtube-square.png" alt="канала youtube"></a></li>
+                                        <li><a href="#"><img src="img/sprite/twiter-square.png" alt="наш твиттер"></a></li>
+                                    </ul>
+                            </div>                        
+                        </div>
+    
+                    </div>    
+            </footer>
+      
+    
+        </div><!-- /end .sbsite -->
     
         	<!-- Site menu on mobile -->
             <div class="sb-slidebar sb-left">
@@ -202,7 +289,99 @@
     
     
             	</div><!-- /end .slidebar-content -->        	
-            </div> <!-- /end .slidebar-itself -->   
+            </div> <!-- /end .slidebar-itself --> 
+        <div class="sb-slidebar sb-right">
+        <div class="slidebar-content">
+                                <!-- Page sidebar widget -->
+                                <div class="page-sidebar__widget">
+                                    <h4 class="widget-title typl8-epsilon">Наука Дизайн Человека</h4>
+                                        <ul class="no-list page-sidebar__links">
+                                        <li><a href="kb-sidebar-single.html">Что такое Система Дизайна Человека?</a></li>
+                                        <li><a href="#">Синтез наук в Системе Дизайна Человека</a></li>
+                                        <li><a href="#">Что такое Нейтрино?</a></li>
+                                        <li><a href="#">Что движет нами?</a></li>
+                                        <li><a href="#">Как это работает?</a></li>
+                                        <li><a href="#">Инструменты Системы Дизайна Человека</a></li>
+                                        <li><a href="#">О Ра Уру Ху и происхождении Системы Дизайна Человека</a></li>
+                                        <li><a href="#">О Jovian Archive Media Inc</a></li>
+                                        </ul>                                
+                                </div>                            
+    
+                                <!-- Page sidebar widget -->
+                                <div class="page-sidebar__widget">
+                                    <h4 class="widget-title typl8-epsilon">Типы личностей</h4>
+                                        <ul class="no-list page-sidebar__links">
+                                        <li><a href="#">Генератор</a></li>
+                                        <li><a href="#">Манифестирующий Генератор</a></li>
+                                        <li><a href="#">Манифестор</a></li>
+                                        <li><a href="#">Проектор</a></li>
+                                        <li><a href="#">Рефлектор</a></li>
+                                        </ul>                                
+                                </div>                            
+    
+                                <!-- Page sidebar widget -->
+                                <div class="page-sidebar__widget">
+                                    <h4 class="widget-title typl8-epsilon">Стратегии</h4>
+                                        <ul class="no-list page-sidebar__links">
+                                <li><a href="#">Откликаться</a></li>
+                                <li><a href="#">Информировать</a></li>
+                                <li><a href="#">Ждать приглашения</a></li>
+                                <li><a href="#">Ждать завершение лунного цикла</a></li>
+                                        </ul>                                
+                                </div>                            
+    
+                                <!-- Page sidebar widget -->
+                                <div class="page-sidebar__widget">
+                                    <h4 class="widget-title typl8-epsilon">Внутренние Авторитеты</h4>
+                                        <ul class="no-list page-sidebar__links">
+                            <li><a href="#">Сакральный</a></li>
+                            <li><a href="#">Эмоциональный</a></li>
+                            <li><a href="#">Селезеночный</a></li>
+                            <li><a href="#">Эго Манифестируемый Авторитет</a></li>
+                            <li><a href="#">Само Проецируемый Авторитет</a></li>
+                            <li><a href="#">Эго Проецируемый</a></li>
+                            <li><a href="#">Нет внутреннего авторитета</a></li>
+                            <li><a href="#">Лунный Авторитет</a></li>
+                                        </ul>                                
+                                </div>                              
+    
+                                <!-- Page sidebar widget -->
+                                <div class="page-sidebar__widget">
+                                    <h4 class="widget-title typl8-epsilon">Центры</h4>
+                                        <ul class="no-list page-sidebar__links">
+                            <li><a href="#">Теменной Центр</a></li>
+                            <li><a href="#">Аджна Центр</a></li>
+                            <li><a href="#">Горловой Центр</a></li>
+                            <li><a href="#">Джи Центр</a></li>                        
+                            <li><a href="#">Сердечный Центр</a></li>
+                            <li><a href="#">Центр Селезенки</a></li>
+                            <li><a href="#">Центр Солнечного Сплетения</a></li>
+                            <li><a href="#">Сакральный Центр</a></li>                        
+                            <li><a href="#">Корневой Центр</a></li>
+                                        </ul>                                
+                                </div>                            
+    
+    
+                                <!-- Page sidebar widget -->
+                                <div class="page-sidebar__widget">
+                                    <h4 class="widget-title typl8-epsilon">Профили</h4>
+                                        <ul class="no-list page-sidebar__links">
+                            <li><a href="#">1/3 — Исследователь-Мученик</a></li>
+                            <li><a href="#">1/4 — Исследователь-Оппортунист</a></li>
+                            <li><a href="#">2/4 — Отшельник-Оппортунист</a></li>
+                            <li><a href="#">2/5 — Отшельник-Еретик</a></li>
+                            <li><a href="#">3/5 — Мученик-Еретик</a></li>                        
+                            <li><a href="#">3/6 — Мученик-Ролевая Модель</a></li>
+                            <li><a href="#">4/6 — Оппортунист-Ролевая Модель</a></li>
+                            <li><a href="#">4/1 — Оппортунист-Исследователь</a></li>
+                            <li><a href="#">5/1 — Еретик-Исследователь</a></li>
+                            <li><a href="#">5/2 — Еретик-Отшельник</a></li>                        
+                            <li><a href="#">6/2 — Ролевая Модель-Отшельник</a></li>
+                            <li><a href="#">6/3 — Ролевая Модель-Мученик</a></li>
+                                        </ul>                                
+                                </div>
+                                </div>
+        </div> 
             <script src="js/jquery.min.js"></script>
             <script src="js/jquery.flexslider-min.js"></script>
             <script src="js/slidebars.min.js"></script>

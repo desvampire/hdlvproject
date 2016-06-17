@@ -1,0 +1,62 @@
+// Primary buttons
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-family: $haasbold;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  span{
+    vertical-align: middle;
+  }
+}
+
+.btn-primary{
+  padding: 10px 16px;
+}
+
+.btn-xs{
+  padding: 4px 10px;
+}
+
+
+.btn_red{
+  color: #FFF;
+  background: $red;
+}
+
+.btn_ghost{
+  border: 1px solid $red;
+  background: #FFF;
+  color: $red;
+  &:hover,&:active,&:focus{
+    background: $red;
+    color: #FFF;
+    .dropdown-icon--red{
+      border-color: #FFF transparent transparent transparent;
+    }
+  }
+}

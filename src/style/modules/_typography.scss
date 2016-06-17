@@ -20,6 +20,7 @@
 
 body{
 	font-family: $haasreg;
+	font-size: 14px;
 }
 
 h1,h2,h3,h4,h5,h6,strong,b{
@@ -39,6 +40,25 @@ a{
 	text-decoration: none;
 }
 
+	blockquote{
+		color: $red;
+		border-left: 2px solid $red;
+		padding-left: 20px;
+		margin-left: 0;
+		&:before{
+			content: "\201C";
+			display: block;
+			color: $red;
+			font-size: 68px;
+			line-height: .222;
+			font-family: $haasbold;
+			position: relative;
+    		top: .225em;
+    		padding-bottom: 25px;
+		}
+	}
+
+
 .white{
 	color: $white;
 }
@@ -55,10 +75,113 @@ a{
 	}
 }
 
+.dark-link{
+	color: $darkblue;
+	&:hover{
+		color: $red;
+	}
+}
+
+.grey-link{
+	color: $grey;
+	&:hover{
+		color: $red;
+	}
+}
+
 .red-bold-link{
-	color: $red !important;
+	color: $red;
 	font-family: $haasbold;
 	&:hover{
 		color: $darkblue;
 	}
+}
+
+.red-link{
+	color: $red;
+	&:hover{
+		color: $darkblue;
+	}
+}
+// Links
+
+.hero_link_l{
+	font-family: $haasbold;
+	text-align: center;
+	font-size: 1.2rem;
+	color: $darkblue;
+	text-decoration: none;
+	border-bottom: 2px solid $darkblue;
+	&:hover{
+			color: $red;
+			border-bottom: 2px solid $red;
+		}
+}
+
+.hero_link_s_invert{
+	font-family: $haasbold;
+	text-align: center;
+	font-size: 1.2rem;
+	color: #FFF;
+	text-decoration: none;
+	border-bottom: 2px solid #FFF;
+	&:hover{
+			color: $red;
+			border-bottom: 2px solid $red;
+		}
+}
+.hero_link_s{
+	font-family: $haasbold;
+	text-align: center;
+	font-size: 1rem;
+	color: $darkblue;
+	text-decoration: none;
+	border-bottom: 2px solid $darkblue;
+	&:hover{
+			color: $red;
+			border-bottom: 2px solid $red;
+		}	
+}
+.haasbold{
+	font-family: $haasbold;
+}
+.haasreg{
+	font-weight: normal;
+	font-family: $haasreg;
+}
+
+.white{
+	color: white;
+}
+.grey{
+	color: $grey;
+}
+
+.red{
+	color: $red;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.small{
+	font-size: 12px;
+}
+.strong{
+	font-weight: bolder;
+	font-family: $haasbold;
+}
+
+.page_title{
+	margin-bottom: 0;
+}
+
+.widget-title{
+	text-transform: uppercase;
+	color: $red;
+}
+
+.white{
+	color: $white;
 }
