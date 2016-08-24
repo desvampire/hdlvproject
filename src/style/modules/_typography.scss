@@ -19,6 +19,8 @@
 }
 
 body{
+	height: 100%;
+	width: 100%;
 	font-family: $haasreg;
 	font-size: 14px;
 }
@@ -57,7 +59,10 @@ a{
     		padding-bottom: 25px;
 		}
 	}
-
+p{
+	margin-top: 0;
+	margin-bottom: 15px;
+}
 
 .white{
 	color: $white;
@@ -65,6 +70,15 @@ a{
 
 .text-right{
 	text-align: right;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.border-red{
+	border: 2px solid $red;
+	padding: 15px;
 }
 
 .dark-bold-link{
@@ -142,6 +156,15 @@ a{
 			border-bottom: 2px solid $red;
 		}	
 }
+
+.link{
+	border-bottom: 1px solid $red;
+	&:hover{
+		border-bottom: 1px solid $darkblue;
+		color: $darkblue;
+	}
+}
+
 .haasbold{
 	font-family: $haasbold;
 }
@@ -184,4 +207,37 @@ a{
 
 .white{
 	color: $white;
+}
+
+// Lists
+
+.square-list{
+	li{
+		&:before{
+			content: '';
+			width: 5px;
+			height: 5px;
+			background-color: $darkblue;
+			display: inline-block;
+			margin-right: 10px;
+		}
+	}
+}
+
+.square-list__red{
+	li{
+		&:before{
+			background-color: $red;
+		}
+	}
+}
+
+
+// Titles responsive styles & sizes
+
+h1,h2,h3,h4,h5,.typl8-giga,.typl8-mega,.typl8-alpha,.typl8-beta{
+	@include media-query('md', 'desktop-first'){
+		font-size: 28px;
+		line-height: 1;
+	}	
 }

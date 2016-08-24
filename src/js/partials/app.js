@@ -8,10 +8,15 @@ var RESPONSIVEUI = {};
     $(".site-mobile-search--bar").toggleClass("js-visible");     
   });
 
-// Init slidebars     
-$.slidebars();
+// MOBILE MENU SLIDEOUT
+$("#site-mobile-nav-trigger").on('click', function() {
+    slideout.toggle();
+});
 
- //Simple Tabs
+// RAVECHART PLUGIN
+$("#mform").each(function(){this.reset();});
+
+//SIMPLE TABS
     $("ul#tabs li").click(function(e){
         if (!$(this).hasClass("active")) {
             var tabNum = $(this).index();
@@ -23,20 +28,31 @@ $.slidebars();
         }
     });
 
+// ACCORDIONS
+    $('.accordion span').click(function(j) {
+        var dropDown = $(this).closest('li').find('div');
 
-// ===== Scroll to Top ==== 
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
-    } else {
-        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-    }
-});
-$('#return-to-top').click(function() {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
-    }, 500);
-});
+        $(this).closest('.accordion').find('div').not(dropDown).slideUp();
+
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).closest('.accordion').find('span.active').removeClass('active');
+            $(this).addClass('active');
+        }
+
+        dropDown.stop(false, true).slideToggle();
+
+        j.preventDefault();
+    });
+
+// FLEXSLIDER
+$('.flexslider').flexslider({
+                animation: "slide",
+                slideshow: false,
+                directionNav: false
+              });
+
 
 
 
@@ -241,3 +257,49 @@ RESPONSIVEUI.responsiveTabs();
 
     });//End Jquery plugins
 }) (jQuery);//End Jquery plugins
+
+
+//P u r e JS++++++++++
+
+// RAVECHART
+function mFormClick() {  $("#city__birth").empty();  $("#mapresult").empty();
+ //alert('Hi');
+var str = $("#mform").serialize();  
+$.post("plugins/karzuan/ravechart/components/tmpl/result.php", str, function(data) {
+$("#city__birth").html(data);  $("#subbtn").css('display' , 'inline-block');
+});}
+
+function mFormSub() {  var str = $("#mform").serialize();   
+$.post("plugins/karzuan/ravechart/components/tmpl/result.php", str, function(data) {  $("#mapresult").html(data);  $("#print_ravechart").css('display' , 'inline-block');  });}/*function mailSub() {  var str = $("#mailform").serialize();   $.post("tmpl/mail.php", str, function(data) {  $("#mapresult").html(data);     });}*/
+function isValidDate(y, m, d){    var dt = new Date(y, m-1, d);    return ((y == dt.getYear()) && ((m-1) == dt.getMonth()) && (d == dt.getDate()));}
+function mailSub() {    $.fancybox.showActivity();  $.ajax({        type        : "POST",       cache   : false,        url     : "tmpl/mailform.php",      data        : $('#mailform').serializeArray(),      success: function(data) {           $.fancybox(data);       }   }); return false;};
+function mailSubsend() {        $.fancybox.showActivity();  $.ajax({        type        : "POST",       cache   : false,        url     : "tmpl/mailsend.php",      data        : $('#mailsend').serializeArray(),      success: function(data) {           $.fancybox(data);       }   }); return false;};
+
+
+// Print ravechart
+function printDiv(divID) {
+            //Get the HTML of div
+    var divElements = document.getElementById(divID).innerHTML;
+            //Get the HTML of whole page
+        var oldPage = document.body.innerHTML;
+
+            //Reset the page's HTML with div's HTML only
+        document.body.innerHTML = 
+            "<html><head><title></title></head><body>" + 
+              divElements + "</body>";
+
+            //Print Page
+            window.print();
+
+            //Restore orignal HTML
+            document.body.innerHTML = oldPage;         
+}
+
+
+var slideout = new Slideout({
+    'panel': document.getElementById('b_site'),
+    'menu': document.getElementById('b_mobile-navigation'),
+    'padding': 190,
+    'tolerance': 70,
+    'touch': false
+  });

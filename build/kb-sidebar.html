@@ -11,7 +11,7 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
             <title>Human Desgn Life</title>
             <meta name="description" content="">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
             <link rel="stylesheet" href="css/main.css">
     
             <!--[if lt IE 9]>
@@ -83,10 +83,27 @@
     </symbol>
     </defs>
     </svg>
-    <div id="sb-site">
             <!--[if lt IE 8]>
                 <p class="browserupgrade">Вы используете <strong>очень старый</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> для того, чтобы сделать веб-серфинг безопасным и эффективным.</p>
             <![endif]-->
+                    <nav class="site-mobile-nav__wrapper" id="b_mobile-navigation">
+                        <ul class="site-mobile-nav__links">
+                            <li><a href="#">С чего начать</a></li>
+                            <li><a href="#">Расчет карты</a></li>
+                            <li><a href="#">Обучение</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">База знаний</a></li>
+                            <li><a href="#">Консультации</a></li>
+                            <li><a href="#">Бизнесу</a></li>
+                        </ul>
+                        <ul class="site-mobile-nav__sublinks">
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Наши лицензии IHDS</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        
+                    </nav>
+                    <div id="b_site">
         <div id="b_site-desktop-header">
             <!-- SITE TOP BAR -->
             <div class="b_top_bar">
@@ -144,17 +161,15 @@
     
     <!-- Mobile header -->
     <header class="b_site-mobile-header">
-    
-        <div class="site-mobile-nav">
-            <a href="#" class="sb-toggle-left white site-mobile-buttons" id="site-mobile-nav-trigger"><i class="icon icon-bars icon-bars-dims"></i></a>
-        </div>
+        <button class="white site-mobile-buttons" id="site-mobile-nav-trigger">M</button>
+            <!-- Navigation -->
     
         <div class="site-mobile-logo">
             <a href="www.google.com" target="_blank"><img src="img/mobile-logo.svg" alt="HumanDesignLife" class="site-mobile-logo--svg"></a>
         </div>
         
         <div class="site-mobile-search">
-            <a href="#" class="white site-mobile-buttons" id="site-mobile-search-trigger"></a>
+            <a href="#" class="white site-mobile-buttons" id="site-mobile-search-trigger">S</a>
         </div>
     
         <div class="site-mobile-search--bar">
@@ -404,8 +419,7 @@ if (!w.__utlWdgt ) {
 
             </div><!-- Good bye Page left sidebar -->
         </div>
-            
-            <!-- FOOTER -->
+                    <!-- FOOTER -->
             <footer class="b_primary_footer" id="b_site_footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
                 
                 <div class="b_site_information">
@@ -491,139 +505,11 @@ if (!w.__utlWdgt ) {
     
                     </div>    
             </footer>
-      
-    
-        </div><!-- /end .sbsite -->
-    
-        	<!-- Site menu on mobile -->
-            <div class="sb-slidebar sb-left">
-            	<div class="slidebar-content">
-            		<nav class="slidebar-content--widget">
-            			<ul class="site-mobile--navigation">
-            				<li><a href="#">С чего начать</a></li>
-            				<li><a href="#">Расчет карты</a></li>
-            				<li><a href="#">Расписание занятий</a></li>
-            				<li><a href="#">Блог</a></li>
-            				<li><a href="#">База знаний</a></li>
-            				<li><a href="#">Отзывы</a></li>
-            				<li><a href="#">Форум</a></li>
-            			</ul>
-            		</nav>
-    
-            		<div class="slidebar-content--widget">
-            			<ul class="site-mobile--links">
-            				<li><a href="#">Новости школы</a></li>
-            				<li><a href="#">Лицензия IHDS</a></li>
-            				<li><a href="#">Наши преподаватели</a></li>
-            				<li><a href="#">Контакты</a></li>
-            			</ul>
-            		</div>
-    
-            		<div class="slidebar-content--widget">
-            			<ul class="site-mobile--links">
-            				<li><a href="#" class="dark-bold-link">Войти на сайт</a></li>
-            				<li><a href="#" class="red-bold-link">Зарегистрироваться</a></li>
-            			</ul>
-            		</div>
-    
-    
-            	</div><!-- /end .slidebar-content -->        	
-            </div> <!-- /end .slidebar-itself --> 
-        <div class="sb-slidebar sb-right">
-        <div class="slidebar-content">
-                                <!-- Page sidebar widget -->
-                                <div class="page-sidebar__widget">
-                                    <h4 class="widget-title typl8-epsilon">Наука Дизайн Человека</h4>
-                                        <ul class="no-list page-sidebar__links">
-                                        <li><a href="kb-sidebar-single.html">Что такое Система Дизайна Человека?</a></li>
-                                        <li><a href="#">Синтез наук в Системе Дизайна Человека</a></li>
-                                        <li><a href="#">Что такое Нейтрино?</a></li>
-                                        <li><a href="#">Что движет нами?</a></li>
-                                        <li><a href="#">Как это работает?</a></li>
-                                        <li><a href="#">Инструменты Системы Дизайна Человека</a></li>
-                                        <li><a href="#">О Ра Уру Ху и происхождении Системы Дизайна Человека</a></li>
-                                        <li><a href="#">О Jovian Archive Media Inc</a></li>
-                                        </ul>                                
-                                </div>                            
-    
-                                <!-- Page sidebar widget -->
-                                <div class="page-sidebar__widget">
-                                    <h4 class="widget-title typl8-epsilon">Типы личностей</h4>
-                                        <ul class="no-list page-sidebar__links">
-                                        <li><a href="#">Генератор</a></li>
-                                        <li><a href="#">Манифестирующий Генератор</a></li>
-                                        <li><a href="#">Манифестор</a></li>
-                                        <li><a href="#">Проектор</a></li>
-                                        <li><a href="#">Рефлектор</a></li>
-                                        </ul>                                
-                                </div>                            
-    
-                                <!-- Page sidebar widget -->
-                                <div class="page-sidebar__widget">
-                                    <h4 class="widget-title typl8-epsilon">Стратегии</h4>
-                                        <ul class="no-list page-sidebar__links">
-                                <li><a href="#">Откликаться</a></li>
-                                <li><a href="#">Информировать</a></li>
-                                <li><a href="#">Ждать приглашения</a></li>
-                                <li><a href="#">Ждать завершение лунного цикла</a></li>
-                                        </ul>                                
-                                </div>                            
-    
-                                <!-- Page sidebar widget -->
-                                <div class="page-sidebar__widget">
-                                    <h4 class="widget-title typl8-epsilon">Внутренние Авторитеты</h4>
-                                        <ul class="no-list page-sidebar__links">
-                            <li><a href="#">Сакральный</a></li>
-                            <li><a href="#">Эмоциональный</a></li>
-                            <li><a href="#">Селезеночный</a></li>
-                            <li><a href="#">Эго Манифестируемый Авторитет</a></li>
-                            <li><a href="#">Само Проецируемый Авторитет</a></li>
-                            <li><a href="#">Эго Проецируемый</a></li>
-                            <li><a href="#">Нет внутреннего авторитета</a></li>
-                            <li><a href="#">Лунный Авторитет</a></li>
-                                        </ul>                                
-                                </div>                              
-    
-                                <!-- Page sidebar widget -->
-                                <div class="page-sidebar__widget">
-                                    <h4 class="widget-title typl8-epsilon">Центры</h4>
-                                        <ul class="no-list page-sidebar__links">
-                            <li><a href="#">Теменной Центр</a></li>
-                            <li><a href="#">Аджна Центр</a></li>
-                            <li><a href="#">Горловой Центр</a></li>
-                            <li><a href="#">Джи Центр</a></li>                        
-                            <li><a href="#">Сердечный Центр</a></li>
-                            <li><a href="#">Центр Селезенки</a></li>
-                            <li><a href="#">Центр Солнечного Сплетения</a></li>
-                            <li><a href="#">Сакральный Центр</a></li>                        
-                            <li><a href="#">Корневой Центр</a></li>
-                                        </ul>                                
-                                </div>                            
-    
-    
-                                <!-- Page sidebar widget -->
-                                <div class="page-sidebar__widget">
-                                    <h4 class="widget-title typl8-epsilon">Профили</h4>
-                                        <ul class="no-list page-sidebar__links">
-                            <li><a href="#">1/3 — Исследователь-Мученик</a></li>
-                            <li><a href="#">1/4 — Исследователь-Оппортунист</a></li>
-                            <li><a href="#">2/4 — Отшельник-Оппортунист</a></li>
-                            <li><a href="#">2/5 — Отшельник-Еретик</a></li>
-                            <li><a href="#">3/5 — Мученик-Еретик</a></li>                        
-                            <li><a href="#">3/6 — Мученик-Ролевая Модель</a></li>
-                            <li><a href="#">4/6 — Оппортунист-Ролевая Модель</a></li>
-                            <li><a href="#">4/1 — Оппортунист-Исследователь</a></li>
-                            <li><a href="#">5/1 — Еретик-Исследователь</a></li>
-                            <li><a href="#">5/2 — Еретик-Отшельник</a></li>                        
-                            <li><a href="#">6/2 — Ролевая Модель-Отшельник</a></li>
-                            <li><a href="#">6/3 — Ролевая Модель-Мученик</a></li>
-                                        </ul>                                
-                                </div>
-                                </div>
-        </div> 
+        
+    </div> 
             <script src="js/jquery.min.js"></script>
             <script src="js/jquery.flexslider-min.js"></script>
-            <script src="js/slidebars.min.js"></script>
+            <script src="js/slideout.min.js"></script>
             <script src="js/main.js"></script>
         </body>
     </html>

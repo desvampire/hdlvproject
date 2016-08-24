@@ -1,3 +1,24 @@
+// Reset `button` and button-style `input` default styles
+.btn-reseted{
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    outline: 0;
+    -webkit-appearance: button;
+    -webkit-user-select: none; 
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+.btn-reseted::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
 // Primary buttons
 .btn {
   display: inline-block;
@@ -43,13 +64,13 @@
 }
 
 
-.btn_red{
+.btn-red{
   color: #FFF;
   background: $red;
 }
 
-.btn_ghost{
-  border: 1px solid $red;
+.btn-ghost{
+  border: 2px solid $red;
   background: #FFF;
   color: $red;
   &:hover,&:active,&:focus{

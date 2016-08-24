@@ -2,10 +2,6 @@
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
-/*  Prevents Flickering  */
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-ms-backface-visibility: hidden;
 	@include media-query('md', 'desktop-first') {
         padding-left: 15px;
         padding-right: 15px;
@@ -43,8 +39,30 @@ img{
 	background: $grey-main;
 }
 
+.lightgrey-bg{
+	background: $superlightgrey;
+}
+
 // Icons
 
 .icon{
 	display: inline-block;
+}
+
+.menu-icon{
+	width: 25px;
+	height: 25px;
+}
+
+.menu-icon__white{
+	fill: $white;
+}
+
+.icon-search{
+	width: 25px;
+	height: 25px;
+}
+
+.icon-search__white{
+	fill: $white;
 }

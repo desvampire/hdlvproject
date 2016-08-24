@@ -1,39 +1,27 @@
 //Breadcrumbs
-
-.breadcrumbs{
-	text-align: center;
-}
-
-.breadcrumbs-post{
-	text-align: left;
-}
-
-.breadcrumb__links-dark{
+		.crumbs li {
+			display: inline-block;
+		}
+		.crumbs li:after {
+			content: '→';
+			padding: 0 0.25em 0 0.5em;
+			color: #999;
+		}
+.crumbs{
 	li{
-		a{
-			color: $darkblue;
-			border-bottom: 1px solid $darkblue;
-			&:hover,&:focus{
-				color: $red;
-				border-bottom-color: $red;
+		&:last-of-type{
+			&:before,&:after{
+				content: none;
+			}
+			a{
+				color: $grey;
 			}
 		}
 	}
 }
 
-.breadcrumb__links{
-	li{
-		display: inline-block;
-		margin-right: 5px;
-		&:after{
-			content: '/';
-			padding-left: 5px;
-		}
-		&:last-child:after{
-			content: none;
-		}
-	}
-}
+
+
 
 //Simple page header
 
@@ -42,7 +30,27 @@
 	padding-bottom: 2em;
 }
 
+//Sidebar page header
+.page-header__grey-bg{
+	background-color: $grey-main;
+	
+}
 
+
+.page-header__grey-bg--inner{
+	padding: 2em 0;
+	@include media-query('lg', 'mobile-first'){
+		padding: 4em 1em;
+		text-align: center;
+	}
+	.page_title{
+		padding-bottom: 25px;
+		border-bottom: 1px solid $grey-main;
+	}
+	.breadcrumbs-post{
+		margin-top: 15px;
+	}
+}
 // Courses
 
 .lesson-card{
@@ -57,25 +65,27 @@
 
 // Page sidebar
 
-#b_page-left-sidebar{
-	margin-top: 2em;
-}
-
-.b_page-left-sidebar__content-wrapper{
-    @include media-query('lg', 'mobile-first') {
-        width: 780px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+// .b_page-left-sidebar__content-wrapper{
+//     @include media-query('lg', 'mobile-first') {
+//         width: 780px;
+//         margin-left: auto;
+//         margin-right: auto;
+//     }
+// }
+.page-sidebar{
+	margin-top: 1.5em;
 }
 
 .b_page-left-sidebar__content{
-	margin-top: 2em;
 	margin-bottom: 4em;
 }
 
 .page-sidebar__left{
 	border-right: 1px solid $grey-main;
+}
+
+.page-sidebar__right{
+	border-left: 1px solid $grey-main;
 }
 
 .page-sidebar__links{
@@ -105,8 +115,14 @@
 }
 
 .b_email_subscribe-in-content{
-	background: rgb(150,154,169);
-	padding: 10px 20px 20px 20px;
+	background-color: $grey-main;
+	padding: 4em 3em;
+	@include media-query('md', 'desktop-first'){
+	padding: 2em;
+}
+	h4{
+		margin-bottom: 27px;
+	}
 }
 
 .after-content__widget{
@@ -177,4 +193,163 @@
 
 .b_lesson__time__month{
 	font-size: 1.2rem;
+}
+
+// Social icons
+
+.soc-icon__white{
+	fill: $white;
+}
+
+.soc-icon__m{
+	width: 28px;
+	height: 24px;
+}
+
+.icon-vk__square{
+	background: $vk;
+	padding: 8px 8px 3px;
+}
+
+.icon-yout__square{
+	background: $youtube;
+	padding: 8px 8px 3px;
+}
+
+.icon-fb__square{
+	background: $facebook;
+	padding: 8px 8px 3px;
+}
+
+.icon-tw__square{
+	background: $twitter;
+	padding: 8px 8px 3px;
+}
+
+.icon-instagram__square{
+background-color: $white;
+	padding: 8px 8px 3px;
+}
+
+// 404 Frog
+
+.frognotfound{
+	margin: 3em 0;
+}
+
+// Alerts
+.alert{
+	padding: 15px;
+	border-radius: 3px;
+	border: 1px solid transparent;
+}
+
+.alert-danger{
+	color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1
+}
+
+.alert-success{
+	color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+// Content managmeent
+
+.entry-content{
+	font-size: 16px;
+}
+
+.entry-content__post{
+	p{
+		&:first-of-type{
+			font-family: Georgia, 'Times New Roman', serif;
+			font-size: 120%;
+			line-height: 1.55555;			
+		}
+	}
+}
+
+
+// Raveform responsive
+
+.ravechart-page-wrapper{
+	max-width: 910px;
+	margin: 0 auto;
+}
+
+@include media-query('lg', 'mobile-first'){
+	.mform__label{
+		min-width: 77px;
+		display: inline-block;
+		font-family: $haasbold;
+	}
+	.mform__select{
+		max-width: 160px;
+	}
+}
+
+#subbtn{
+	margin-top: 1em;
+}
+
+#mapresult{
+	margin-top: 1em;
+}
+
+.chart_label{
+	margin-right: 10px;
+}
+
+.chart_definition{
+	font-family: $haasbold;
+	font-weight: 700;
+}
+
+.mapresult__ravechart{
+	margin: 1em 0;
+	text-align: center;
+}
+
+#print_ravechart{
+	display: none;
+}
+
+// Flexsliders
+
+// h o m e s l d r
+
+#homeslide-1{
+	background-image: url('../img/home_slide_1.png');
+}
+
+	.homeslide-1__content{
+		line-height: 1.3;
+		padding: 2.8em 0;
+	    @include media-query('md', 'desktop-first') {
+	        padding: 1em 0;
+	    }
+	}
+
+#homeslide-2{
+	background-image: url('../img/perspective_chart.png');
+}
+
+.background-slide{
+	background-repeat: no-repeat;
+	background-size: cover;
 }

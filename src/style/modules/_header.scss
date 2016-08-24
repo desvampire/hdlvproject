@@ -49,6 +49,7 @@
 	}
 }
 
+
 .login_details{
 	.login_link{
 		display: inline-block;
@@ -106,6 +107,13 @@
 			background: #f5f5f5;
 			@include transition (all 0.1s ease);
 			border-bottom: 3px solid #db484d;
+			.nav_icon{
+				fill: $red;
+				@include transition (all 0.3s ease-in);
+			}
+			.icon-rave_icon{
+			    stroke: $red;
+			}
 			}
 			&:after{
 			content: '';
@@ -129,7 +137,18 @@
 	height: 50px;
 }
 
-
+.site-mobile-nav__links{
+	li{
+		margin-bottom: 18px;
+		a{
+			color: $white;
+			font-size: 14px;
+			text-transform: uppercase;
+			font-family: $haasbold;
+			font-weight: bolder;
+		}
+	}
+}
 
 
 #site-mobile-nav-trigger{
@@ -154,32 +173,24 @@
 	right: 0;
 }
 
+.site-mobile-nav__sublinks{
+	border-top: 1px solid $grey;
+	li{
+		margin: 10px 0;
+		a{
+			color: $superlightgrey;
+		}
+	}
+}
+
 .site-mobile-buttons{
 	padding: 11px 20px;
 }
 
-.site-mobile--navigation{
-	li{
-		margin-bottom: 10px;
-		a{
-			font-size: 14px;
-			color: $darkblue;
-			text-transform: uppercase;
-			font-family: $haasbold;
-			padding: 10px 0;
-		}
-	}
-}
-
-.site-mobile--links{
-	li{
-		margin-bottom: 10px;
-		a{
-			font-size: 14px;
-			padding: 10px 0;
-			color: $darkblue;
-		}
-	}
+.site-mobile-nav__wrapper{
+	display: none;
+	background: $darkblue;
+	padding: 30px 20px 0;
 }
 
 .site-mobile-search--bar{
@@ -194,8 +205,9 @@
 	width: 100%;
 	padding: 0 5%;
 	border: 0;
-	background: $grey-main;
+	background: $darkblue;
 	height: 45px;
+	color: $white;
 }
 
 .js-visible{
@@ -209,8 +221,13 @@
 }
 
 .icon-bulb19{
-	width: 32px;
+	width: 24px;
 	height: 32px;
+}
+
+.kb-icon{
+	width: 21px;
+	height: 32px;	
 }
 
 .icon-calendar-icons{

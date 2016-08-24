@@ -54,3 +54,11 @@
 .b_primary_footer__bottom{
 	border-top: 1px solid #202127;
 }
+
+#footer-social-widget{
+	.get-social-widget{
+		@include media-query('lg', 'mobile-first'){
+			text-align: right;
+		}		
+	}
+}
